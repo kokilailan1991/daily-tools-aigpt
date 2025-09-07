@@ -184,6 +184,17 @@ export default function ToolPage() {
             </CardHeader>
             <CardContent id="tool-content">
               <ToolComponent />
+              
+              {/* Finance Tools Disclaimer */}
+              {tool.category === 'Finance' && (
+                <div className="mt-6 pt-4 border-t border-gray-200 dark:border-gray-700">
+                  <p className="text-xs text-gray-500 dark:text-gray-400 text-center leading-relaxed">
+                    Disclaimer: This calculator is provided for educational and informational purposes only. 
+                    It does not constitute financial advice, investment recommendations, or guarantees of returns. 
+                    Please consult a SEBI-registered advisor before making investment or financial decisions.
+                  </p>
+                </div>
+              )}
             </CardContent>
           </Card>
         </motion.div>

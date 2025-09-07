@@ -121,6 +121,17 @@ export default function HomePage() {
             </p>
           </div>
         )}
+
+        {/* Finance Tools Disclaimer */}
+        {selectedCategory === 'Finance' && filteredTools.length > 0 && (
+          <div className="mt-8 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+            <p className="text-xs text-gray-500 dark:text-gray-400 text-center leading-relaxed">
+              Disclaimer: These calculators are provided for educational and informational purposes only. 
+              They do not constitute financial advice, investment recommendations, or guarantees of returns. 
+              Please consult a SEBI-registered advisor before making investment or financial decisions.
+            </p>
+          </div>
+        )}
       </main>
 
       {/* Footer */}
@@ -131,6 +142,17 @@ export default function HomePage() {
             <p className="mt-2 text-sm">
               Simple, useful tools for your daily needs
             </p>
+            
+            {/* Footer Disclaimer */}
+            <div className="mt-6 pt-4 border-t border-gray-200 dark:border-gray-700">
+              <p className="text-xs text-gray-500 dark:text-gray-400 text-center leading-relaxed max-w-4xl mx-auto">
+                Disclaimer: The financial calculators on this website (including SIP, SWP, EMI, Risk, Currency, and related tools) 
+                are intended for educational use only. Results are based on user inputs and assumed rates of return, and may not 
+                reflect actual outcomes. The information provided here does not constitute financial or investment advice. 
+                All investments are subject to market risks. Please consult a SEBI-registered financial advisor before making 
+                investment or financial decisions.
+              </p>
+            </div>
           </div>
         </div>
       </footer>
