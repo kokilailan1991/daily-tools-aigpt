@@ -17,7 +17,7 @@ export default function SocialShare({ title, description, url }: SocialShareProp
   }
 
   const handleNativeShare = async () => {
-    if (navigator.share) {
+    if (typeof navigator !== 'undefined' && 'share' in navigator) {
       try {
         await navigator.share({
           title,
@@ -68,7 +68,7 @@ export default function SocialShare({ title, description, url }: SocialShareProp
       </Button>
       
       {/* Native Share (if available) */}
-      {navigator.share && (
+      {typeof navigator !== 'undefined' && 'share' in navigator && (
         <Button
           variant="outline"
           size="sm"
