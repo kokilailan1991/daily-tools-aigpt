@@ -5,6 +5,7 @@ import { tools } from '../data/tools'
 import { Button } from '../components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card'
 import { useToast } from '../hooks/use-toast'
+import SocialShare from '../components/SocialShare'
 
 // Import all tool components
 import BMICalculator from '../components/tools/BMICalculator'
@@ -184,6 +185,13 @@ export default function ToolPage() {
             </CardHeader>
             <CardContent id="tool-content">
               <ToolComponent />
+              
+              {/* Social Sharing */}
+              <SocialShare 
+                title={`${tool.name} Calculator Free Online India 2025`}
+                description={tool.description}
+                url={window.location.href}
+              />
               
               {/* Finance Tools Disclaimer */}
               {tool.category === 'Finance' && (
