@@ -59,6 +59,30 @@ export const tools: Tool[] = [
     category: 'Finance',
     component: 'TipCalculator'
   },
+  {
+    id: 'risk-calculator',
+    name: 'Risk Calculator',
+    description: 'Calculate investment risk and returns',
+    icon: '📈',
+    category: 'Finance',
+    component: 'RiskCalculator'
+  },
+  {
+    id: 'sip-calculator',
+    name: 'SIP Calculator',
+    description: 'Calculate Systematic Investment Plan returns',
+    icon: '💰',
+    category: 'Finance',
+    component: 'SIPCalculator'
+  },
+  {
+    id: 'swp-calculator',
+    name: 'SWP Calculator',
+    description: 'Calculate Systematic Withdrawal Plan',
+    icon: '💸',
+    category: 'Finance',
+    component: 'SWPCalculator'
+  },
 
   // Utilities
   {

@@ -27,6 +27,9 @@ import DateDifferenceCalculator from '../components/tools/DateDifferenceCalculat
 import TimezoneConverter from '../components/tools/TimezoneConverter'
 import StopwatchTimer from '../components/tools/StopwatchTimer'
 import DailyPlanner from '../components/tools/DailyPlanner'
+import RiskCalculator from '../components/tools/RiskCalculator'
+import SIPCalculator from '../components/tools/SIPCalculator'
+import SWPCalculator from '../components/tools/SWPCalculator'
 
 const toolComponents: { [key: string]: React.ComponentType } = {
   BMICalculator,
@@ -49,6 +52,9 @@ const toolComponents: { [key: string]: React.ComponentType } = {
   TimezoneConverter,
   StopwatchTimer,
   DailyPlanner,
+  RiskCalculator,
+  SIPCalculator,
+  SWPCalculator,
 }
 
 export default function ToolPage() {
