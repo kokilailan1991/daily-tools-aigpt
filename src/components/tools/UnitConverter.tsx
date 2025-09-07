@@ -55,8 +55,8 @@ export default function UnitConverter() {
       const converted = tempConversions[toUnit](celsius)
       setResult(Math.round(converted * 100) / 100)
     } else {
-      const fromFactor = conversions[category as keyof typeof conversions][fromUnit as keyof typeof conversions[typeof category]]
-      const toFactor = conversions[category as keyof typeof conversions][toUnit as keyof typeof conversions[typeof category]]
+      const fromFactor = (conversions[category as keyof typeof conversions] as any)[fromUnit]
+      const toFactor = (conversions[category as keyof typeof conversions] as any)[toUnit]
       
       if (fromFactor && toFactor) {
         const converted = (val * fromFactor) / toFactor

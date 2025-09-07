@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Search, Moon, Sun, Menu } from 'lucide-react'
+import { Search, Moon, Sun } from 'lucide-react'
 import { useTheme } from '../contexts/ThemeContext'
 import { tools } from '../data/tools'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card'

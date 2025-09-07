@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import { Card, CardContent, CardHeader, CardTitle } from '../ui/card'
-import { Input } from '../ui/input'
+import { Card, CardContent } from '../ui/card'
 
 export default function WordCounter() {
   const [text, setText] = useState('')

@@ -82,6 +82,7 @@ export const tools: Tool[] = [
     name: 'Password Generator',
     description: 'Generate secure passwords',
     icon: '🔐',
+    category: 'Utilities',
     component: 'PasswordGenerator'
   },
   {
