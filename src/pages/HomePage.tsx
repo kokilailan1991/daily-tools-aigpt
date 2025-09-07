@@ -89,7 +89,7 @@ export default function HomePage() {
             >
               <Card 
                 className="h-full hover:shadow-lg transition-all duration-300 cursor-pointer group hover:scale-105"
-                onClick={() => window.location.href = `/tool/${tool.id}`}
+                onClick={() => window.location.href = `#/tool/${tool.id}`}
               >
                 <CardHeader className="pb-3">
                   <div className="flex items-center space-x-3">

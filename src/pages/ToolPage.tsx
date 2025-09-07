@@ -60,7 +60,7 @@ export default function ToolPage() {
   const ToolComponent = tool ? toolComponents[tool.component] : null
 
   const handleShare = async () => {
-    const url = window.location.href
+    const url = window.location.href.replace('#', '')
     try {
       if (navigator.share) {
         await navigator.share({
