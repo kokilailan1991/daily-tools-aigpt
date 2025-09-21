@@ -3,7 +3,7 @@ export interface Tool {
   name: string
   description: string
   icon: string
-  category: 'Health' | 'Finance' | 'Utilities' | 'Text' | 'Time' | 'Conversion'
+  category: 'Health' | 'Finance' | 'Utilities' | 'Text' | 'Time' | 'Conversion' | 'Fun'
   component: string
 }
 
@@ -200,5 +200,175 @@ export const tools: Tool[] = [
     icon: '📋',
     category: 'Time',
     component: 'DailyPlanner'
+  },
+
+  // New Finance Tools
+  {
+    id: 'gst-calculator',
+    name: 'GST Calculator',
+    description: 'Calculate GST amount and total',
+    icon: '🧾',
+    category: 'Finance',
+    component: 'GSTCalculator'
+  },
+  {
+    id: 'income-tax-estimator',
+    name: 'Income Tax Estimator',
+    description: 'Estimate your income tax liability',
+    icon: '📈',
+    category: 'Finance',
+    component: 'IncomeTaxEstimator'
+  },
+  {
+    id: 'compound-interest-calculator',
+    name: 'Compound Interest Calculator',
+    description: 'Calculate compound interest returns',
+    icon: '💎',
+    category: 'Finance',
+    component: 'CompoundInterestCalculator'
+  },
+  {
+    id: 'crypto-converter',
+    name: 'Crypto Converter',
+    description: 'Convert BTC/ETH to INR/USD',
+    icon: '₿',
+    category: 'Finance',
+    component: 'CryptoConverter'
+  },
+
+  // Productivity/Office Tools
+  {
+    id: 'pdf-merger',
+    name: 'PDF Merger',
+    description: 'Merge multiple PDF files',
+    icon: '📄',
+    category: 'Utilities',
+    component: 'PDFMerger'
+  },
+  {
+    id: 'pdf-to-word',
+    name: 'PDF to Word',
+    description: 'Convert PDF to Word document',
+    icon: '📝',
+    category: 'Utilities',
+    component: 'PDFToWord'
+  },
+  {
+    id: 'image-converter',
+    name: 'Image Converter',
+    description: 'Convert JPG ⇄ PNG ⇄ WebP',
+    icon: '🖼️',
+    category: 'Utilities',
+    component: 'ImageConverter'
+  },
+  {
+    id: 'image-resizer',
+    name: 'Image Resizer',
+    description: 'Resize images to any dimensions',
+    icon: '📐',
+    category: 'Utilities',
+    component: 'ImageResizer'
+  },
+
+  // Students Tools
+  {
+    id: 'cgpa-converter',
+    name: 'CGPA Converter',
+    description: 'Convert CGPA to percentage',
+    icon: '🎓',
+    category: 'Utilities',
+    component: 'CGPAConverter'
+  },
+  {
+    id: 'simple-interest-calculator',
+    name: 'Simple Interest Calculator',
+    description: 'Calculate simple interest (school level)',
+    icon: '📚',
+    category: 'Finance',
+    component: 'SimpleInterestCalculator'
+  },
+  {
+    id: 'equation-solver',
+    name: 'Equation Solver',
+    description: 'Solve linear and quadratic equations',
+    icon: '🧮',
+    category: 'Utilities',
+    component: 'EquationSolver'
+  },
+
+  // Daily Use Tools
+  {
+    id: 'weather-lookup',
+    name: 'Weather Lookup',
+    description: 'Check weather by city',
+    icon: '🌤️',
+    category: 'Utilities',
+    component: 'WeatherLookup'
+  },
+  {
+    id: 'pincode-lookup',
+    name: 'Pincode Lookup',
+    description: 'Find location by pincode',
+    icon: '📍',
+    category: 'Utilities',
+    component: 'PincodeLookup'
+  },
+  {
+    id: 'ifsc-finder',
+    name: 'IFSC Finder',
+    description: 'Find bank IFSC code',
+    icon: '🏦',
+    category: 'Utilities',
+    component: 'IFSCFinder'
+  },
+  {
+    id: 'fuel-price-checker',
+    name: 'Fuel Price Checker',
+    description: 'Check fuel prices by city in India',
+    icon: '⛽',
+    category: 'Utilities',
+    component: 'FuelPriceChecker'
+  },
+
+  // Fun/Viral Tools
+  {
+    id: 'love-calculator',
+    name: 'Love Calculator',
+    description: 'Calculate name compatibility (just for fun)',
+    icon: '💕',
+    category: 'Fun',
+    component: 'LoveCalculator'
+  },
+  {
+    id: 'random-joke-generator',
+    name: 'Random Joke Generator',
+    description: 'Generate random jokes to brighten your day',
+    icon: '😄',
+    category: 'Fun',
+    component: 'RandomJokeGenerator'
+  },
+  {
+    id: 'quote-generator',
+    name: 'Quote Generator',
+    description: 'Get inspirational quotes',
+    icon: '💭',
+    category: 'Fun',
+    component: 'QuoteGenerator'
+  },
+  {
+    id: 'age-in-days-calculator',
+    name: 'Age in Days Calculator',
+    description: 'Calculate age in days, hours, minutes',
+    icon: '⏰',
+    category: 'Fun',
+    component: 'AgeInDaysCalculator'
+  },
+  {
+    id: 'meme-text-generator',
+    name: 'Meme Text Generator',
+    description: 'Generate viral meme text',
+    icon: '😂',
+    category: 'Fun',
+    component: 'MemeTextGenerator'
   }
 ]

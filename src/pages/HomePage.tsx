@@ -7,8 +7,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../co
 import { Input } from '../components/ui/input'
 import { Button } from '../components/ui/button'
 import { Badge } from '../components/ui/badge'
+import QRCode from 'qrcode.react'
 
-const categories = ['All', 'Health', 'Finance', 'Utilities', 'Text', 'Time', 'AI Tools']
+const categories = ['All', 'Health', 'Finance', 'Utilities', 'Text', 'Time', 'Fun', 'AI Tools']
 
 // AI Tools data structure
 const aiToolsSections = [
@@ -304,28 +305,34 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* GPay Support Section */}
+        {/* New GPay Support Section */}
         <section className="mt-16 bg-gradient-to-r from-green-500 to-blue-600 rounded-2xl p-8 text-white">
           <div className="text-center max-w-2xl mx-auto">
             <h2 className="text-3xl font-bold mb-4">🙏 Support Our Project</h2>
             <p className="text-lg mb-6 opacity-90">
-              Help us keep these tools free for everyone. Scan the QR or pay via GPay to support development.
+              Help us keep these tools free for everyone. Pay via GPay to support development.
             </p>
             
             <div className="flex flex-col md:flex-row items-center justify-center gap-8">
-              {/* QR Code */}
+              {/* GPay Number & QR Code */}
               <div className="flex-shrink-0">
-                <img 
-                  src="/assets/gpay-qr.png" 
-                  alt="GPay QR Code" 
-                  className="w-48 h-48 rounded-lg shadow-lg bg-white p-4"
-                  onError={(e) => {
-                    // Fallback if QR image doesn't exist
-                    e.currentTarget.style.display = 'none'
-                  }}
-                />
-                <div className="mt-4 text-sm opacity-80">
-                  Scan to pay via GPay
+                <div className="bg-white rounded-lg p-6 shadow-lg">
+                  <div className="text-center mb-4">
+                    <p className="text-gray-600 font-medium">GPay Number</p>
+                    <p className="text-2xl font-bold text-green-600">+91-9884295524</p>
+                  </div>
+                  <div className="flex justify-center">
+                    <QRCode 
+                      value="upi://pay?pa=9884295524@upi&pn=AIGPT&cu=INR"
+                      size={200}
+                      bgColor="white"
+                      fgColor="black"
+                      level="M"
+                    />
+                  </div>
+                  <div className="mt-4 text-sm text-gray-600 text-center">
+                    Scan to pay via GPay/UPI
+                  </div>
                 </div>
               </div>
               
@@ -334,17 +341,16 @@ export default function HomePage() {
                 <Button
                   className="bg-white text-green-600 hover:bg-gray-100 px-8 py-3 text-lg font-semibold rounded-lg shadow-lg"
                   onClick={() => {
-                    // GPay payment integration
-                    if (window.confirm('Redirect to GPay payment? This will open GPay app or website.')) {
-                      // You can replace this with actual GPay payment integration
-                      window.open('https://pay.google.com/', '_blank')
-                    }
+                    window.open('upi://pay?pa=9884295524@upi&pn=AIGPT&cu=INR', '_blank')
                   }}
                 >
                   💳 Pay with GPay
                 </Button>
                 <p className="mt-2 text-sm opacity-80">
                   Any amount helps! Even ₹10
+                </p>
+                <p className="mt-1 text-xs opacity-75">
+                  Opens GPay app directly
                 </p>
               </div>
             </div>
@@ -354,6 +360,7 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+
       </main>
 
       {/* Footer */}
