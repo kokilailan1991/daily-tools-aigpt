@@ -32,6 +32,27 @@ import RiskCalculator from '../components/tools/RiskCalculator'
 import SIPCalculator from '../components/tools/SIPCalculator'
 import SWPCalculator from '../components/tools/SWPCalculator'
 
+// Import new tool components
+import GSTCalculator from '../components/tools/GSTCalculator'
+import CompoundInterestCalculator from '../components/tools/CompoundInterestCalculator'
+import CryptoConverter from '../components/tools/CryptoConverter'
+import PDFMerger from '../components/tools/PDFMerger'
+import PDFToWord from '../components/tools/PDFToWord'
+import ImageConverter from '../components/tools/ImageConverter'
+import ImageResizer from '../components/tools/ImageResizer'
+import CGPAConverter from '../components/tools/CGPAConverter'
+import EquationSolver from '../components/tools/EquationSolver'
+import WeatherLookup from '../components/tools/WeatherLookup'
+import PincodeLookup from '../components/tools/PincodeLookup'
+import IFSCFinder from '../components/tools/IFSCFinder'
+import FuelPriceChecker from '../components/tools/FuelPriceChecker'
+import SimpleInterestCalculator from '../components/tools/SimpleInterestCalculator'
+import AgeInDaysCalculator from '../components/tools/AgeInDaysCalculator'
+import LoveCalculator from '../components/tools/LoveCalculator'
+import RandomJokeGenerator from '../components/tools/RandomJokeGenerator'
+import QuoteGenerator from '../components/tools/QuoteGenerator'
+import MemeTextGenerator from '../components/tools/MemeTextGenerator'
+
 const toolComponents: { [key: string]: React.ComponentType } = {
   BMICalculator,
   AgeCalculator,
@@ -56,6 +77,26 @@ const toolComponents: { [key: string]: React.ComponentType } = {
   RiskCalculator,
   SIPCalculator,
   SWPCalculator,
+  // New tool components
+  GSTCalculator,
+  CompoundInterestCalculator,
+  CryptoConverter,
+  PDFMerger,
+  PDFToWord,
+  ImageConverter,
+  ImageResizer,
+  CGPAConverter,
+  EquationSolver,
+  WeatherLookup,
+  PincodeLookup,
+  IFSCFinder,
+  FuelPriceChecker,
+  SimpleInterestCalculator,
+  AgeInDaysCalculator,
+  LoveCalculator,
+  RandomJokeGenerator,
+  QuoteGenerator,
+  MemeTextGenerator,
 }
 
 export default function ToolPage() {
