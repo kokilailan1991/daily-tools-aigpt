@@ -314,13 +314,9 @@ export default function HomePage() {
             </p>
             
             <div className="flex flex-col md:flex-row items-center justify-center gap-8">
-              {/* GPay Number & QR Code */}
+              {/* QR Code Only */}
               <div className="flex-shrink-0">
                 <div className="bg-white rounded-lg p-6 shadow-lg">
-                  <div className="text-center mb-4">
-                    <p className="text-gray-600 font-medium">GPay Number</p>
-                    <p className="text-2xl font-bold text-green-600">+91-9884295524</p>
-                  </div>
                   <div className="flex justify-center">
                     <QRCodeSVG 
                       value="upi://pay?pa=9884295524@upi&pn=AIGPT&cu=INR"
