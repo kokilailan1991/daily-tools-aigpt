@@ -8,7 +8,82 @@ import { Input } from '../components/ui/input'
 import { Button } from '../components/ui/button'
 import { Badge } from '../components/ui/badge'
 
-const categories = ['All', 'Health', 'Finance', 'Utilities', 'Text', 'Time']
+const categories = ['All', 'Health', 'Finance', 'Utilities', 'Text', 'Time', 'AI Tools']
+
+// AI Tools data structure
+const aiToolsSections = [
+  {
+    title: '👩‍🍳 For Homemakers',
+    tools: [
+      { name: 'ChatGPT', description: 'Recipes, daily Q&A', url: 'https://chat.openai.com' },
+      { name: 'Canva AI', description: 'Easy design & posters', url: 'https://canva.com' },
+      { name: 'Bring!', description: 'Smart shopping list', url: 'https://www.getbring.com' }
+    ]
+  },
+  {
+    title: '🛒 For Shopping / Lifestyle',
+    tools: [
+      { name: 'Perplexity AI', description: 'Compare products & research', url: 'https://perplexity.ai' },
+      { name: 'Honey AI', description: 'Coupons & discounts', url: 'https://joinhoney.com' },
+      { name: 'Faver AI', description: 'Personalized shopping', url: 'https://faver.ai' }
+    ]
+  },
+  {
+    title: '📊 For Project Management / Work',
+    tools: [
+      { name: 'Notion AI', description: 'Notes & task automation', url: 'https://notion.so' },
+      { name: 'Otter.ai', description: 'AI meeting transcription', url: 'https://otter.ai' },
+      { name: 'SlidesAI', description: 'Text → slides', url: 'https://slidesai.io' },
+      { name: 'ClickUp AI', description: 'AI project management', url: 'https://clickup.com/ai' }
+    ]
+  },
+  {
+    title: '👨‍💻 For Developers / Students',
+    tools: [
+      { name: 'GitHub Copilot', description: 'AI coding assistant', url: 'https://github.com/features/copilot' },
+      { name: 'Tabnine', description: 'AI code suggestions', url: 'https://tabnine.com' },
+      { name: 'Codeium', description: 'Free coding AI', url: 'https://codeium.com' },
+      { name: 'ChatPDF', description: 'Ask questions to your PDF', url: 'https://chatpdf.com' }
+    ]
+  },
+  {
+    title: '🎓 For Students & Learning',
+    tools: [
+      { name: 'Khanmigo', description: 'AI tutor (Khan Academy)', url: 'https://khanacademy.org/khan-labs' },
+      { name: 'Elicit', description: 'Research paper summarizer', url: 'https://elicit.org' },
+      { name: 'Quizlet AI', description: 'Flashcards & study helper', url: 'https://quizlet.com' },
+      { name: 'Socratic (Google)', description: 'Homework helper', url: 'https://socratic.org' }
+    ]
+  },
+  {
+    title: '💼 For Job Seekers',
+    tools: [
+      { name: 'Rezi AI', description: 'Resume builder', url: 'https://rezi.ai' },
+      { name: 'Kickresume', description: 'Resume + cover letter', url: 'https://kickresume.com' },
+      { name: 'Interview Warmup (Google)', description: 'AI interview practice', url: 'https://grow.google/interview-warmup/' }
+    ]
+  },
+  {
+    title: '🎤 For Creators / YouTubers',
+    tools: [
+      { name: 'InVideo', description: 'AI video creator', url: 'https://invideo.io' },
+      { name: 'Pictory', description: 'Convert text → video', url: 'https://pictory.ai' },
+      { name: 'Runway ML', description: 'AI video editing & effects', url: 'https://runwayml.com' },
+      { name: 'Synthesia', description: 'AI avatars & video', url: 'https://synthesia.io' },
+      { name: 'ElevenLabs', description: 'AI voice generator', url: 'https://elevenlabs.io' },
+      { name: 'Descript', description: 'Podcast/video editing', url: 'https://descript.com' }
+    ]
+  },
+  {
+    title: '🧘 For Health & Personal Growth',
+    tools: [
+      { name: 'Woebot', description: 'AI mental health coach', url: 'https://woebothealth.com' },
+      { name: 'Youper', description: 'AI mood tracker', url: 'https://youper.ai' },
+      { name: 'FitnessAI', description: 'Personalized workout plans', url: 'https://fitnessai.com' },
+      { name: 'MyFitnessPal AI', description: 'Nutrition & calorie tracking', url: 'https://www.myfitnesspal.com' }
+    ]
+  }
+]
 
 export default function HomePage() {
   const [searchTerm, setSearchTerm] = useState('')
@@ -93,40 +168,73 @@ export default function HomePage() {
         </div>
 
         {/* Tools Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {filteredTools.map((tool, index) => (
-            <motion.div
-              key={tool.id}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
-            >
-              <Card 
-                className="h-full hover:shadow-lg transition-all duration-300 cursor-pointer group hover:scale-105"
-                onClick={() => window.location.href = `#/tool/${tool.id}`}
+        {selectedCategory === 'AI Tools' ? (
+          // AI Tools Section
+          <div className="space-y-8">
+            {aiToolsSections.map((section, sectionIndex) => (
+              <div key={sectionIndex}>
+                <h3 className="text-xl font-semibold mt-6 mb-4">{section.title}</h3>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  {section.tools.map((tool, toolIndex) => (
+                    <motion.div
+                      key={toolIndex}
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: (sectionIndex * 0.1) + (toolIndex * 0.05) }}
+                    >
+                      <div className="bg-white p-4 rounded-lg shadow text-center">
+                        <h4 className="font-bold text-lg mb-2">{tool.name}</h4>
+                        <p className="text-sm text-gray-600 mb-4">{tool.description}</p>
+                        <Button
+                          className="bg-green-500 text-white px-3 py-1 rounded-lg hover:bg-green-600"
+                          onClick={() => window.open(tool.url, '_blank')}
+                        >
+                          Try
+                        </Button>
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : (
+          // Regular Tools Grid
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {filteredTools.map((tool, index) => (
+              <motion.div
+                key={tool.id}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1 }}
               >
-                <CardHeader className="pb-3">
-                  <div className="flex items-center space-x-3">
-                    <div className="text-3xl">{tool.icon}</div>
-                    <div>
-                      <CardTitle className="text-lg">{tool.name}</CardTitle>
-                      <Badge variant="secondary" className="mt-1">
-                        {tool.category}
-                      </Badge>
+                <Card 
+                  className="h-full hover:shadow-lg transition-all duration-300 cursor-pointer group hover:scale-105"
+                  onClick={() => window.location.href = `#/tool/${tool.id}`}
+                >
+                  <CardHeader className="pb-3">
+                    <div className="flex items-center space-x-3">
+                      <div className="text-3xl">{tool.icon}</div>
+                      <div>
+                        <CardTitle className="text-lg">{tool.name}</CardTitle>
+                        <Badge variant="secondary" className="mt-1">
+                          {tool.category}
+                        </Badge>
+                      </div>
                     </div>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-sm">
-                    {tool.description}
-                  </CardDescription>
-                </CardContent>
-              </Card>
-            </motion.div>
-          ))}
-        </div>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription className="text-sm">
+                      {tool.description}
+                    </CardDescription>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            ))}
+          </div>
+        )}
 
-        {filteredTools.length === 0 && (
+        {selectedCategory !== 'AI Tools' && filteredTools.length === 0 && (
           <div className="text-center py-12">
             <div className="text-6xl mb-4">🔍</div>
             <h3 className="text-xl font-semibold mb-2">No tools found</h3>
@@ -193,6 +301,57 @@ export default function HomePage() {
                 </Card>
               </motion.div>
             ))}
+          </div>
+        </section>
+
+        {/* GPay Support Section */}
+        <section className="mt-16 bg-gradient-to-r from-green-500 to-blue-600 rounded-2xl p-8 text-white">
+          <div className="text-center max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold mb-4">🙏 Support Our Project</h2>
+            <p className="text-lg mb-6 opacity-90">
+              Help us keep these tools free for everyone. Scan the QR or pay via GPay to support development.
+            </p>
+            
+            <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+              {/* QR Code */}
+              <div className="flex-shrink-0">
+                <img 
+                  src="/assets/gpay-qr.png" 
+                  alt="GPay QR Code" 
+                  className="w-48 h-48 rounded-lg shadow-lg bg-white p-4"
+                  onError={(e) => {
+                    // Fallback if QR image doesn't exist
+                    e.currentTarget.style.display = 'none'
+                  }}
+                />
+                <div className="mt-4 text-sm opacity-80">
+                  Scan to pay via GPay
+                </div>
+              </div>
+              
+              {/* GPay Button */}
+              <div className="flex flex-col items-center">
+                <Button
+                  className="bg-white text-green-600 hover:bg-gray-100 px-8 py-3 text-lg font-semibold rounded-lg shadow-lg"
+                  onClick={() => {
+                    // GPay payment integration
+                    if (window.confirm('Redirect to GPay payment? This will open GPay app or website.')) {
+                      // You can replace this with actual GPay payment integration
+                      window.open('https://pay.google.com/', '_blank')
+                    }
+                  }}
+                >
+                  💳 Pay with GPay
+                </Button>
+                <p className="mt-2 text-sm opacity-80">
+                  Any amount helps! Even ₹10
+                </p>
+              </div>
+            </div>
+            
+            <div className="mt-6 text-sm opacity-75">
+              <p>Your support helps us maintain and add new tools</p>
+            </div>
           </div>
         </section>
       </main>
