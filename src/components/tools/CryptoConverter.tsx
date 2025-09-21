@@ -14,7 +14,7 @@ export default function CryptoConverter() {
   const [loading, setLoading] = useState(false)
 
   // Mock exchange rates (in real app, you'd fetch from an API)
-  const exchangeRates = {
+  const exchangeRates: { [key: string]: { [key: string]: number } } = {
     BTC: { INR: 6500000, USD: 78000 },
     ETH: { INR: 320000, USD: 3800 },
     INR: { BTC: 1/6500000, ETH: 1/320000 },
@@ -28,7 +28,7 @@ export default function CryptoConverter() {
       
       // Simulate API delay
       setTimeout(() => {
-        const rate = exchangeRates[fromCrypto as keyof typeof exchangeRates]?.[toCurrency as keyof typeof exchangeRates[typeof fromCrypto]] || 1
+        const rate = exchangeRates[fromCrypto]?.[toCurrency] || 1
         const convertedAmount = amountValue * rate
         
         setResult({
