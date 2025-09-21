@@ -7,7 +7,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../co
 import { Input } from '../components/ui/input'
 import { Button } from '../components/ui/button'
 import { Badge } from '../components/ui/badge'
-import { QRCode } from 'qrcode.react'
+import { QRCodeSVG } from 'qrcode.react'
 
 const categories = ['All', 'Health', 'Finance', 'Utilities', 'Text', 'Time', 'Fun', 'AI Tools']
 
@@ -322,12 +322,11 @@ export default function HomePage() {
                     <p className="text-2xl font-bold text-green-600">+91-9884295524</p>
                   </div>
                   <div className="flex justify-center">
-                    <QRCode 
+                    <QRCodeSVG 
                       value="upi://pay?pa=9884295524@upi&pn=AIGPT&cu=INR"
                       size={200}
                       bgColor="white"
                       fgColor="black"
-                      level="M"
                     />
                   </div>
                   <div className="mt-4 text-sm text-gray-600 text-center">
