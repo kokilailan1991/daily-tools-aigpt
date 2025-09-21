@@ -7,7 +7,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../co
 import { Input } from '../components/ui/input'
 import { Button } from '../components/ui/button'
 import { Badge } from '../components/ui/badge'
-import QRCode from 'qrcode.react'
+import { QRCode } from 'qrcode.react'
 
 const categories = ['All', 'Health', 'Finance', 'Utilities', 'Text', 'Time', 'Fun', 'AI Tools']
 
