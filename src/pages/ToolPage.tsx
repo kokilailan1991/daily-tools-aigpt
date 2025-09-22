@@ -34,6 +34,7 @@ import SWPCalculator from '../components/tools/SWPCalculator'
 
 // Import new tool components
 import GSTCalculator from '../components/tools/GSTCalculator'
+import IncomeTaxEstimator from '../components/tools/IncomeTaxEstimator'
 import CompoundInterestCalculator from '../components/tools/CompoundInterestCalculator'
 import CryptoConverter from '../components/tools/CryptoConverter'
 import PDFMerger from '../components/tools/PDFMerger'
@@ -79,6 +80,7 @@ const toolComponents: { [key: string]: React.ComponentType } = {
   SWPCalculator,
   // New tool components
   GSTCalculator,
+  IncomeTaxEstimator,
   CompoundInterestCalculator,
   CryptoConverter,
   PDFMerger,
