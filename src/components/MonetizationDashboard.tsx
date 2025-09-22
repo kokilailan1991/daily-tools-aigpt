@@ -26,13 +26,20 @@ export default function MonetizationDashboard() {
 
   useEffect(() => {
     // Mock revenue data - in production, fetch from your backend
+    const subscriptions = 45
+    const monthlySubscriptionRevenue = subscriptions * 299 // ₹299 per month
+    const adRevenue = 2500
+    const oneTimeRevenue = 5000
+    const monthlyRevenue = monthlySubscriptionRevenue + adRevenue + oneTimeRevenue
+    const totalRevenue = monthlyRevenue * 8 // 8 months of data
+    
     setRevenueData({
-      totalRevenue: 125000,
-      monthlyRevenue: 15000,
-      subscriptions: 45,
-      adRevenue: 2500,
+      totalRevenue: totalRevenue,
+      monthlyRevenue: monthlyRevenue,
+      subscriptions: subscriptions,
+      adRevenue: adRevenue,
       conversionRate: 3.2,
-      averageRevenuePerUser: 333
+      averageRevenuePerUser: Math.round(monthlyRevenue / subscriptions)
     })
   }, [])
 
@@ -111,7 +118,7 @@ export default function MonetizationDashboard() {
             <div className="space-y-2">
               <div className="flex justify-between text-sm">
                 <span>Subscriptions:</span>
-                <span className="font-semibold">₹{(revenueData.monthlyRevenue * 0.8).toLocaleString()}</span>
+                <span className="font-semibold">₹{(revenueData.subscriptions * 299).toLocaleString()}</span>
               </div>
               <div className="flex justify-between text-sm">
                 <span>Ad Revenue:</span>
@@ -119,7 +126,7 @@ export default function MonetizationDashboard() {
               </div>
               <div className="flex justify-between text-sm">
                 <span>One-time:</span>
-                <span className="font-semibold">₹{(revenueData.monthlyRevenue * 0.2).toLocaleString()}</span>
+                <span className="font-semibold">₹{(revenueData.monthlyRevenue - (revenueData.subscriptions * 299) - revenueData.adRevenue).toLocaleString()}</span>
               </div>
             </div>
           </div>
