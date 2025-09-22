@@ -7,6 +7,7 @@ import BlogPostPage from './pages/BlogPostPage'
 import NotFound from './components/NotFound'
 import { Toaster } from './components/ui/toaster'
 import AnalyticsDashboard from './components/AnalyticsDashboard'
+import MonetizationDashboard from './components/MonetizationDashboard'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           </Routes>
           <Toaster />
           <AnalyticsDashboard />
+          <MonetizationDashboard />
         </div>
       </Router>
     </ThemeProvider>
