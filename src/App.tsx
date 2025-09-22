@@ -6,6 +6,7 @@ import BlogPage from './pages/BlogPage'
 import BlogPostPage from './pages/BlogPostPage'
 import NotFound from './components/NotFound'
 import { Toaster } from './components/ui/toaster'
+import AnalyticsDashboard from './components/AnalyticsDashboard'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="*" element={<NotFound />} />
           </Routes>
           <Toaster />
+          <AnalyticsDashboard />
         </div>
       </Router>
     </ThemeProvider>

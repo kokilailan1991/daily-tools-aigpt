@@ -6,6 +6,8 @@ import { Button } from '../components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card'
 import { useToast } from '../hooks/use-toast'
 import SocialShare from '../components/SocialShare'
+import { analytics } from '../utils/simpleAnalytics'
+import { useEffect } from 'react'
 
 // Import all tool components
 import BMICalculator from '../components/tools/BMICalculator'
@@ -108,6 +110,13 @@ export default function ToolPage() {
 
   const tool = tools.find(t => t.id === toolId)
   const ToolComponent = tool ? toolComponents[tool.component] : null
+
+  // Track tool usage
+  useEffect(() => {
+    if (tool) {
+      analytics.trackToolUsage(tool.id, tool.name, 'view')
+    }
+  }, [tool])
 
   const handleShare = async () => {
     const url = window.location.href.replace('#', '')
