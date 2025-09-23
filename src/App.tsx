@@ -7,6 +7,7 @@ import BlogPostPage from './pages/BlogPostPage'
 import NotFound from './components/NotFound'
 import { Toaster } from './components/ui/toaster'
 import AnalyticsDashboard from './components/AnalyticsDashboard'
+import ThemeToggle from './components/ThemeToggle'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           </Routes>
           <Toaster />
           <AnalyticsDashboard />
+          <ThemeToggle />
         </div>
       </Router>
     </ThemeProvider>
