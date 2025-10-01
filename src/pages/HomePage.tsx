@@ -311,14 +311,24 @@ export default function HomePage() {
               {/* Product 1: Haier AC */}
               <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6">
                 <div className="text-center">
-                  <img
-                    src="https://m.media-amazon.com/images/I/61c3S8x5uXL._AC_SX679_.jpg"
-                    alt="Haier 1.5 Ton 5 Star Inverter Split AC"
-                    className="w-full h-48 object-contain rounded-lg mb-4"
-                    onError={(e) => {
-                      e.currentTarget.src = 'https://via.placeholder.com/250x200?text=Haier+AC'
-                    }}
-                  />
+                  <div className="w-full h-48 bg-gray-50 rounded-lg mb-4 flex items-center justify-center border-2 border-dashed border-gray-200">
+                    <img
+                      src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=400&h=300&fit=crop&auto=format"
+                      alt="Haier 1.5 Ton 5 Star Inverter Split AC"
+                      className="w-full h-full object-cover rounded-lg"
+                      onError={(e) => {
+                        e.currentTarget.style.display = 'none'
+                        e.currentTarget.parentElement!.innerHTML = `
+                          <div class="flex flex-col items-center justify-center h-full text-gray-400">
+                            <svg class="w-16 h-16 mb-2" fill="currentColor" viewBox="0 0 20 20">
+                              <path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-sm">Haier AC</span>
+                          </div>
+                        `
+                      }}
+                    />
+                  </div>
                   <h3 className="text-lg font-semibold text-gray-800 mb-4">
                     Haier 1.5 Ton 5 Star Inverter Split AC
                   </h3>
@@ -348,11 +358,24 @@ export default function HomePage() {
               {/* Product 2: 4 Seater Sofa */}
               <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6">
                 <div className="text-center">
-                  <img
-                    src="https://via.placeholder.com/250x200?text=4+Seater+Sofa"
-                    alt="4 Seater Sofa"
-                    className="w-full h-48 object-cover rounded-lg mb-4"
-                  />
+                  <div className="w-full h-48 bg-gray-50 rounded-lg mb-4 flex items-center justify-center border-2 border-dashed border-gray-200">
+                    <img
+                      src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop&auto=format"
+                      alt="4 Seater Sofa"
+                      className="w-full h-full object-cover rounded-lg"
+                      onError={(e) => {
+                        e.currentTarget.style.display = 'none'
+                        e.currentTarget.parentElement!.innerHTML = `
+                          <div class="flex flex-col items-center justify-center h-full text-gray-400">
+                            <svg class="w-16 h-16 mb-2" fill="currentColor" viewBox="0 0 20 20">
+                              <path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-sm">4 Seater Sofa</span>
+                          </div>
+                        `
+                      }}
+                    />
+                  </div>
                   <h3 className="text-lg font-semibold text-gray-800 mb-4">
                     4 Seater Sofa
                   </h3>
