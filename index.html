@@ -23,15 +23,32 @@
     <meta name="twitter:title" content="Daily Tools by AIGPT - 20+ Free Online Calculators India 2025" />
     <meta name="twitter:description" content="Free online calculators for SIP, EMI, SWP, Risk, Currency, BMI, and more. 20+ daily tools for students and professionals in India." />
     
-    <!-- Google Analytics Placeholder -->
-    <!-- Replace GA_TRACKING_ID with your actual Google Analytics tracking ID -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+    <!-- Google Analytics 4 -->
+    <!-- Replace G-XXXXXXXXXX with your actual Google Analytics 4 Measurement ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'GA_TRACKING_ID');
-    </script> -->
+      gtag('config', 'G-XXXXXXXXXX');
+      
+      // Custom event tracking for affiliate clicks
+      function trackAffiliateClick(platform, url) {
+        gtag('event', 'affiliate_click', {
+          'event_category': 'Affiliate',
+          'event_label': platform,
+          'value': url
+        });
+      }
+      
+      // Custom event tracking for tool usage
+      function trackToolClick(toolName) {
+        gtag('event', 'tool_click', {
+          'event_category': 'Tools',
+          'event_label': toolName
+        });
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
@@ -83,17 +100,42 @@
           
           // Track affiliate links (Amazon + HeyGen)
           if (link && link.href) {
-            if (link.href.indexOf('amzn.to') !== -1 || link.href.indexOf('heygen.com') !== -1) {
-              trackClick(link.href, link.textContent.trim(), 'affiliate');
+            if (link.href.indexOf('amzn.to') !== -1) {
+              trackClick(link.href, link.textContent.trim(), 'affiliate_amazon');
+              // Also track with Google Analytics if available
+              if (window.gtag) {
+                window.gtag('event', 'affiliate_click', {
+                  'event_category': 'Affiliate',
+                  'event_label': 'Amazon',
+                  'value': link.href
+                });
+              }
+            } else if (link.href.indexOf('heygen.com') !== -1) {
+              trackClick(link.href, link.textContent.trim(), 'affiliate_heygen');
+              // Also track with Google Analytics if available
+              if (window.gtag) {
+                window.gtag('event', 'affiliate_click', {
+                  'event_category': 'Affiliate',
+                  'event_label': 'HeyGen',
+                  'value': link.href
+                });
+              }
             }
           }
           
-          // Track tool usage
-          const button = target.closest('button, a');
-          if (button) {
-            if (button.classList.contains('tool-btn') || button.hasAttribute('data-tool')) {
-              const toolName = button.getAttribute('data-tool') || button.textContent.trim() || 'Unknown Tool';
-              trackClick(window.location.href, toolName, toolName);
+          // Track tool usage - check for tool-btn class or data-tool attribute on any element
+          const toolElement = target.closest('[data-tool], .tool-btn');
+          if (toolElement) {
+            const toolName = toolElement.getAttribute('data-tool') || toolElement.textContent.trim() || 'Unknown Tool';
+            const toolUrl = window.location.href;
+            trackClick(toolUrl, toolName, 'tool_' + toolName);
+            console.log('Tool tracked:', toolName);
+            // Also track with Google Analytics if available
+            if (window.gtag) {
+              window.gtag('event', 'tool_click', {
+                'event_category': 'Tools',
+                'event_label': toolName
+              });
             }
           }
         });
