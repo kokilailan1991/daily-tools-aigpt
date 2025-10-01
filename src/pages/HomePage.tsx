@@ -313,7 +313,7 @@ export default function HomePage() {
                 <div className="text-center">
                   <div className="w-full h-48 bg-gray-50 rounded-lg mb-4 flex items-center justify-center border-2 border-dashed border-gray-200">
                     <img
-                      src="https://m.media-amazon.com/images/I/61c3S8x5uXL._AC_SX679_.jpg"
+                      src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=300&fit=crop&auto=format"
                       alt="Haier 1.5 Ton 5 Star Inverter Split AC"
                       className="w-full h-full object-contain rounded-lg bg-white"
                       onError={(e) => {
