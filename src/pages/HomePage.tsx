@@ -213,8 +213,9 @@ export default function HomePage() {
                 transition={{ delay: index * 0.1 }}
               >
                 <Card 
-                  className="h-full hover:shadow-lg transition-all duration-300 cursor-pointer group hover:scale-105"
+                  className="h-full hover:shadow-lg transition-all duration-300 cursor-pointer group hover:scale-105 tool-btn"
                   onClick={() => window.location.href = `#/tool/${tool.id}`}
+                  data-tool={tool.name}
                 >
                   <CardHeader className="pb-3">
                     <div className="flex items-center space-x-3">
@@ -450,8 +451,9 @@ export default function HomePage() {
                 transition={{ delay: index * 0.1 }}
               >
                 <Card 
-                  className="h-full hover:shadow-lg transition-all duration-300 cursor-pointer group hover:scale-105"
+                  className="h-full hover:shadow-lg transition-all duration-300 cursor-pointer group hover:scale-105 tool-btn"
                   onClick={() => window.location.href = `#/tool/${tool.id}`}
+                  data-tool={tool.name}
                 >
                   <CardHeader className="pb-3">
                     <div className="flex items-center space-x-3">
