@@ -14,8 +14,9 @@ const categories = ['All', 'Health', 'Finance', 'Utilities', 'Text', 'Time', 'Fu
 // AI Tools data structure
 const aiToolsSections = [
   {
-    title: '👩‍🍳 For Homemakers',
+    title: '🤖 AI Chat & General',
     tools: [
+      { name: 'AI Chatbot', description: 'Your personal AI assistant', url: 'https://bot.aigpt.co.in/' },
       { name: 'ChatGPT', description: 'Recipes, daily Q&A', url: 'https://chat.openai.com' },
       { name: 'Canva AI', description: 'Easy design & posters', url: 'https://canva.com' },
       { name: 'Bring!', description: 'Smart shopping list', url: 'https://www.getbring.com' }
@@ -32,6 +33,7 @@ const aiToolsSections = [
   {
     title: '📊 For Project Management / Work',
     tools: [
+      { name: 'AI Logistics Bill Generator', description: 'Generate bills & invoices', url: 'https://bill.aigpt.co.in/' },
       { name: 'Notion AI', description: 'Notes & task automation', url: 'https://notion.so' },
       { name: 'Otter.ai', description: 'AI meeting transcription', url: 'https://otter.ai' },
       { name: 'SlidesAI', description: 'Text → slides', url: 'https://slidesai.io' },
@@ -50,6 +52,7 @@ const aiToolsSections = [
   {
     title: '🎓 For Students & Learning',
     tools: [
+      { name: 'AI Students Help', description: 'Student project assistance', url: 'https://student-project.aigpt.co.in/' },
       { name: 'Khanmigo', description: 'AI tutor (Khan Academy)', url: 'https://khanacademy.org/khan-labs' },
       { name: 'Elicit', description: 'Research paper summarizer', url: 'https://elicit.org' },
       { name: 'Quizlet AI', description: 'Flashcards & study helper', url: 'https://quizlet.com' },
