@@ -256,6 +256,45 @@ export default function HomePage() {
           </div>
         )}
 
+        {/* HeyGen Affiliate Promotion Section */}
+        {selectedCategory !== 'AI Tools' && (
+          <section className="mt-12 mb-16">
+            <div 
+              className="rounded-2xl p-8 text-center"
+              style={{ backgroundColor: '#f9f9f9' }}
+            >
+              <div className="max-w-3xl mx-auto">
+                <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-800">
+                  🚀 Turn Text into Stunning AI Videos
+                </h2>
+                <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+                  Create professional avatars and explainer videos in minutes with HeyGen.
+                </p>
+                <Button
+                  className="text-white font-bold px-8 py-4 text-lg rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                  style={{ 
+                    backgroundColor: '#ff5722',
+                    borderColor: '#ff5722'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.backgroundColor = '#e64a19'
+                    e.currentTarget.style.borderColor = '#e64a19'
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.backgroundColor = '#ff5722'
+                    e.currentTarget.style.borderColor = '#ff5722'
+                  }}
+                  onClick={() => {
+                    window.open('https://www.heygen.com/?sid=rewardful&via=ilanthiraiyan', '_blank')
+                  }}
+                >
+                  🎥 Try HeyGen Free
+                </Button>
+              </div>
+            </div>
+          </section>
+        )}
+
         {/* Most Popular Tools Section */}
         <section className="mt-16">
           <div className="text-center mb-8">
