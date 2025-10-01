@@ -295,6 +295,111 @@ export default function HomePage() {
           </section>
         )}
 
+        {/* Recommended Products Section */}
+        {selectedCategory !== 'AI Tools' && (
+          <section className="mt-12 mb-16">
+            <div className="text-center mb-8">
+              <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-800">
+                🛒 Recommended Products
+              </h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                Handpicked products we love and recommend
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+              {/* Product 1: Haier AC */}
+              <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6">
+                <div className="text-center">
+                  <img
+                    src="https://m.media-amazon.com/images/I/61c3S8x5uXL._AC_SX679_.jpg"
+                    alt="Haier 1.5 Ton 5 Star Inverter Split AC"
+                    className="w-full h-48 object-contain rounded-lg mb-4"
+                    onError={(e) => {
+                      e.currentTarget.src = 'https://via.placeholder.com/250x200?text=Haier+AC'
+                    }}
+                  />
+                  <h3 className="text-lg font-semibold text-gray-800 mb-4">
+                    Haier 1.5 Ton 5 Star Inverter Split AC
+                  </h3>
+                  <Button
+                    className="w-full text-white font-bold px-4 py-3 rounded-lg shadow-md hover:shadow-lg transition-all duration-300"
+                    style={{ 
+                      backgroundColor: '#ff9900',
+                      borderColor: '#ff9900'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.backgroundColor = '#e68900'
+                      e.currentTarget.style.borderColor = '#e68900'
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.backgroundColor = '#ff9900'
+                      e.currentTarget.style.borderColor = '#ff9900'
+                    }}
+                    onClick={() => {
+                      window.open('https://amzn.to/4mHruYs', '_blank')
+                    }}
+                  >
+                    Buy on Amazon
+                  </Button>
+                </div>
+              </div>
+
+              {/* Product 2: 4 Seater Sofa */}
+              <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6">
+                <div className="text-center">
+                  <img
+                    src="https://via.placeholder.com/250x200?text=4+Seater+Sofa"
+                    alt="4 Seater Sofa"
+                    className="w-full h-48 object-cover rounded-lg mb-4"
+                  />
+                  <h3 className="text-lg font-semibold text-gray-800 mb-4">
+                    4 Seater Sofa
+                  </h3>
+                  <Button
+                    className="w-full text-white font-bold px-4 py-3 rounded-lg shadow-md hover:shadow-lg transition-all duration-300"
+                    style={{ 
+                      backgroundColor: '#ff9900',
+                      borderColor: '#ff9900'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.backgroundColor = '#e68900'
+                      e.currentTarget.style.borderColor = '#e68900'
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.backgroundColor = '#ff9900'
+                      e.currentTarget.style.borderColor = '#ff9900'
+                    }}
+                    onClick={() => {
+                      window.open('https://amzn.to/4o2Eucy', '_blank')
+                    }}
+                  >
+                    Buy on Amazon
+                  </Button>
+                </div>
+              </div>
+
+              {/* Placeholder for future products */}
+              <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6">
+                <div className="text-center">
+                  <div className="w-full h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+                    <span className="text-gray-400 text-sm">More products coming soon...</span>
+                  </div>
+                  <h3 className="text-lg font-semibold text-gray-800 mb-4">
+                    Coming Soon
+                  </h3>
+                  <Button
+                    className="w-full text-gray-400 font-bold px-4 py-3 rounded-lg shadow-md cursor-not-allowed"
+                    disabled
+                  >
+                    Coming Soon
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
+
         {/* Most Popular Tools Section */}
         <section className="mt-16">
           <div className="text-center mb-8">
