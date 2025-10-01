@@ -36,5 +36,70 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Click Tracking Script -->
+    <script>
+      (function() {
+        'use strict';
+        
+        // REPLACE WITH YOUR GOOGLE APPS SCRIPT WEB APP URL
+        const TRACKING_URL = 'YOUR_WEB_APP_URL';
+        
+        // Function to send tracking data to Google Sheets
+        function trackClick(url, text, tool) {
+          if (!TRACKING_URL || TRACKING_URL === 'YOUR_WEB_APP_URL') {
+            console.log('Click tracking not configured. Set TRACKING_URL in index.html');
+            return;
+          }
+          
+          const params = new URLSearchParams({
+            url: url,
+            text: text,
+            tool: tool,
+            page: window.location.href,
+            timestamp: new Date().toISOString(),
+            userAgent: navigator.userAgent
+          });
+          
+          // Use sendBeacon for better reliability
+          if (navigator.sendBeacon) {
+            const blob = new Blob([params.toString()], { type: 'application/x-www-form-urlencoded' });
+            navigator.sendBeacon(TRACKING_URL, blob);
+          } else {
+            // Fallback to fetch with no-cors
+            fetch(TRACKING_URL + '?' + params.toString(), {
+              method: 'GET',
+              mode: 'no-cors'
+            }).catch(function(err) {
+              console.error('Tracking failed:', err);
+            });
+          }
+        }
+        
+        // Track all clicks on the page
+        document.addEventListener('click', function(e) {
+          const target = e.target;
+          const link = target.closest('a');
+          
+          // Track affiliate links (Amazon + HeyGen)
+          if (link && link.href) {
+            if (link.href.indexOf('amzn.to') !== -1 || link.href.indexOf('heygen.com') !== -1) {
+              trackClick(link.href, link.textContent.trim(), 'affiliate');
+            }
+          }
+          
+          // Track tool usage
+          const button = target.closest('button, a');
+          if (button) {
+            if (button.classList.contains('tool-btn') || button.hasAttribute('data-tool')) {
+              const toolName = button.getAttribute('data-tool') || button.textContent.trim() || 'Unknown Tool';
+              trackClick(window.location.href, toolName, toolName);
+            }
+          }
+        });
+        
+        console.log('Click tracking initialized');
+      })();
+    </script>
   </body>
 </html>
