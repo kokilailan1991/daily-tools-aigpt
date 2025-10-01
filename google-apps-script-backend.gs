@@ -45,14 +45,34 @@ function handleRequest(e) {
     // Get the active spreadsheet
     const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
     
-    // Extract parameters
-    const params = e.parameter || {};
+    // Handle different request types
+    let params = {};
+    
+    if (e && e.parameter) {
+      // GET request parameters
+      params = e.parameter;
+    } else if (e && e.postData && e.postData.contents) {
+      // POST request body
+      try {
+        const postData = e.postData.contents;
+        const pairs = postData.split('&');
+        pairs.forEach(pair => {
+          const [key, value] = pair.split('=');
+          params[decodeURIComponent(key)] = decodeURIComponent(value);
+        });
+      } catch (parseError) {
+        Logger.log('Parse error: ' + parseError.toString());
+        params = {};
+      }
+    }
+    
+    // Extract parameters with defaults
     const url = params.url || '';
     const text = params.text || '';
     const tool = params.tool || '';
     const page = params.page || '';
     const timestamp = params.timestamp || new Date().toISOString();
-    const userAgent = e.parameter.userAgent || 'Unknown';
+    const userAgent = params.userAgent || 'Unknown';
     
     // Append row to sheet
     sheet.appendRow([
@@ -70,8 +90,9 @@ function handleRequest(e) {
       .setMimeType(ContentService.MimeType.TEXT);
       
   } catch (error) {
-    // Log error
+    // Log error for debugging
     Logger.log('Error: ' + error.toString());
+    Logger.log('Event object: ' + JSON.stringify(e));
     
     // Return error response
     return ContentService
