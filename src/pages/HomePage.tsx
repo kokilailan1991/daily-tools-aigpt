@@ -313,9 +313,9 @@ export default function HomePage() {
                 <div className="text-center">
                   <div className="w-full h-48 bg-gray-50 rounded-lg mb-4 flex items-center justify-center border-2 border-dashed border-gray-200">
                     <img
-                      src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=400&h=300&fit=crop&auto=format"
+                      src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&h=300&fit=crop&auto=format"
                       alt="Haier 1.5 Ton 5 Star Inverter Split AC"
-                      className="w-full h-full object-cover rounded-lg"
+                      className="w-full h-full object-contain rounded-lg bg-white"
                       onError={(e) => {
                         e.currentTarget.style.display = 'none'
                         e.currentTarget.parentElement!.innerHTML = `
@@ -360,9 +360,9 @@ export default function HomePage() {
                 <div className="text-center">
                   <div className="w-full h-48 bg-gray-50 rounded-lg mb-4 flex items-center justify-center border-2 border-dashed border-gray-200">
                     <img
-                      src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop&auto=format"
+                      src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400&h=300&fit=crop&auto=format"
                       alt="4 Seater Sofa"
-                      className="w-full h-full object-cover rounded-lg"
+                      className="w-full h-full object-contain rounded-lg bg-white"
                       onError={(e) => {
                         e.currentTarget.style.display = 'none'
                         e.currentTarget.parentElement!.innerHTML = `
