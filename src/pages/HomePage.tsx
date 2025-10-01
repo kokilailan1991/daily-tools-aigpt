@@ -489,7 +489,7 @@ export default function HomePage() {
                 <div className="bg-white rounded-lg p-6 shadow-lg">
                   <div className="flex justify-center">
                     <QRCodeSVG 
-                      value="upi://pay?pa=9884295524@upi&pn=AIGPT&cu=INR"
+                      value="upi://pay?pa=9962352046@upi&pn=AIGPT&cu=INR"
                       size={200}
                       bgColor="white"
                       fgColor="black"
@@ -506,7 +506,7 @@ export default function HomePage() {
                 <Button
                   className="bg-white text-green-600 hover:bg-gray-100 px-8 py-3 text-lg font-semibold rounded-lg shadow-lg"
                   onClick={() => {
-                    window.open('upi://pay?pa=9884295524@upi&pn=AIGPT&cu=INR', '_blank')
+                    window.open('upi://pay?pa=9962352046@upi&pn=AIGPT&cu=INR', '_blank')
                   }}
                 >
                   💳 Pay with GPay
