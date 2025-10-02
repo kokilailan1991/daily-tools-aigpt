@@ -5,10 +5,6 @@ import ToolPage from './pages/ToolPage'
 import BlogPage from './pages/BlogPage'
 import BlogPostPage from './pages/BlogPostPage'
 import DealsPage from './pages/DealsPage'
-import HealthPage from './pages/HealthPage'
-import BMICalculatorPage from './pages/health/BMICalculatorPage'
-import AgeCalculatorPage from './pages/health/AgeCalculatorPage'
-import CalorieCalculatorPage from './pages/health/CalorieCalculatorPage'
 import NotFound from './components/NotFound'
 import { Toaster } from './components/ui/toaster'
 import AnalyticsDashboard from './components/AnalyticsDashboard'
@@ -25,10 +21,6 @@ function App() {
             <Route path="/blog" element={<BlogPage />} />
             <Route path="/blog/:postId" element={<BlogPostPage />} />
             <Route path="/deals" element={<DealsPage />} />
-            <Route path="/health" element={<HealthPage />} />
-            <Route path="/health/bmi-calculator" element={<BMICalculatorPage />} />
-            <Route path="/health/age-calculator" element={<AgeCalculatorPage />} />
-            <Route path="/health/calorie-calculator" element={<CalorieCalculatorPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
           <Toaster />
