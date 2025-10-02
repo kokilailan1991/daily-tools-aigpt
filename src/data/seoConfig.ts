@@ -370,6 +370,437 @@ Important Considerations:
       }
     ],
     relatedTools: ['emi-calculator', 'compound-interest-calculator', 'risk-calculator']
+  },
+  'unit-converter': {
+    title: 'Free Unit Converter – Length, Weight, Temperature Online 2025',
+    description: 'Convert between different units instantly with our free unit converter. Length, weight, temperature conversions for daily use.',
+    keywords: ['unit converter', 'length converter', 'weight converter', 'temperature converter', 'measurement converter'],
+    category: 'utility',
+    content: `Our unit converter provides instant conversions between different measurement systems. Whether you need to convert length, weight, temperature, or other units, our tool makes it simple and accurate.
+
+Supported Conversions:
+- Length: mm, cm, m, km, inches, feet, yards, miles
+- Weight: mg, g, kg, ounces, pounds, tons
+- Temperature: Celsius, Fahrenheit, Kelvin
+
+Example Conversions:
+- 1 meter = 100 centimeters = 1000 millimeters
+- 1 kilogram = 1000 grams = 2.20462 pounds
+- 0°C = 32°F = 273.15K
+
+Why Use Our Unit Converter:
+- Instant conversions with high accuracy
+- Support for metric and imperial systems
+- Commonly used units for daily life
+- No registration required
+- Mobile-friendly interface
+
+Practical Applications:
+- Cooking and baking measurements
+- Construction and engineering
+- Scientific calculations
+- Travel planning
+- Educational purposes
+
+Our converter uses precise conversion factors and is regularly updated to ensure accuracy. All conversions are performed client-side for fast results and privacy.`,
+    faqs: [
+      {
+        question: 'How accurate are the unit conversions?',
+        answer: 'Our unit converter uses precise conversion factors and is highly accurate. All calculations are performed using standard conversion rates recognized internationally.'
+      },
+      {
+        question: 'Can I convert between metric and imperial units?',
+        answer: 'Yes! Our converter supports both metric (SI) and imperial unit systems, allowing seamless conversion between different measurement standards.'
+      },
+      {
+        question: 'Are there any limitations on the values I can convert?',
+        answer: 'You can convert any reasonable numerical value. The converter handles both positive and negative numbers, and very large or small values within JavaScript number limits.'
+      }
+    ],
+    relatedTools: ['percentage-calculator', 'tip-calculator', 'bmi-calculator']
+  },
+  'qr-code-generator': {
+    title: 'Free QR Code Generator – Create QR Codes Online 2025',
+    description: 'Generate QR codes instantly for text, URLs, and more. Free online QR code generator with customizable options.',
+    keywords: ['QR code generator', 'QR code creator', 'free QR code', 'QR code maker', 'barcode generator'],
+    category: 'utility',
+    content: `Our QR code generator allows you to create QR codes instantly for any text or URL. QR codes are two-dimensional barcodes that can store various types of information and are easily scanned by smartphones.
+
+What You Can Generate:
+- URLs and website links
+- Plain text messages
+- Contact information
+- WiFi credentials
+- Email addresses
+- Phone numbers
+
+How It Works:
+1. Enter your text or URL in the input field
+2. Click "Generate QR Code"
+3. Download or share the generated QR code
+
+QR Code Benefits:
+- Quick access to information
+- No typing required
+- Works with any smartphone camera
+- Can store various data types
+- Easy to print and share
+
+Use Cases:
+- Business cards and marketing materials
+- Restaurant menus
+- Event information
+- WiFi sharing
+- Social media profiles
+- Product information
+
+Our QR code generator uses industry-standard encoding to ensure compatibility with all QR code scanners. The generated codes are high-quality and can be downloaded in various formats.`,
+    faqs: [
+      {
+        question: 'What types of data can I store in a QR code?',
+        answer: 'QR codes can store URLs, plain text, contact information, WiFi credentials, email addresses, phone numbers, and more. Our generator supports text and URL encoding.'
+      },
+      {
+        question: 'How do I scan a QR code?',
+        answer: 'Most modern smartphones have built-in QR code scanners in their camera apps. Simply open your camera and point it at the QR code to scan.'
+      },
+      {
+        question: 'Can I customize the appearance of the QR code?',
+        answer: 'Our generator creates standard QR codes with a black and white pattern. For advanced customization, you would need specialized QR code design tools.'
+      }
+    ],
+    relatedTools: ['password-generator', 'base64-converter', 'text-case-converter']
+  },
+  'password-generator': {
+    title: 'Free Password Generator – Secure Password Creator Online 2025',
+    description: 'Generate secure, random passwords with our free password generator. Customizable length and character options for maximum security.',
+    keywords: ['password generator', 'secure password', 'random password', 'password creator', 'strong password'],
+    category: 'utility',
+    content: `Our password generator creates secure, random passwords to help protect your online accounts. Strong passwords are essential for maintaining cybersecurity in today's digital world.
+
+Password Features:
+- Customizable length (4-50 characters)
+- Include/exclude uppercase letters
+- Include/exclude lowercase letters
+- Include/exclude numbers
+- Include/exclude special symbols
+- Cryptographically secure random generation
+
+Security Best Practices:
+- Use at least 12-16 characters
+- Include a mix of character types
+- Avoid common words or patterns
+- Use unique passwords for each account
+- Consider using a password manager
+
+Password Strength Tips:
+- Longer passwords are more secure
+- Mix different character types
+- Avoid personal information
+- Don't reuse passwords
+- Change passwords regularly
+
+Why Strong Passwords Matter:
+- Protect against brute force attacks
+- Prevent unauthorized access
+- Secure sensitive information
+- Comply with security policies
+- Reduce identity theft risk
+
+Our generator uses secure random number generation to create unpredictable passwords. The generated passwords are not stored or transmitted anywhere, ensuring your privacy.`,
+    faqs: [
+      {
+        question: 'How secure are the generated passwords?',
+        answer: 'Our password generator uses cryptographically secure random number generation, making the passwords highly secure and unpredictable.'
+      },
+      {
+        question: 'What is the recommended password length?',
+        answer: 'For maximum security, we recommend using passwords of at least 12-16 characters with a mix of uppercase, lowercase, numbers, and symbols.'
+      },
+      {
+        question: 'Should I save these passwords somewhere?',
+        answer: 'Yes, but use a secure password manager rather than writing them down. Password managers encrypt your passwords and can generate strong ones automatically.'
+      }
+    ],
+    relatedTools: ['qr-code-generator', 'base64-converter', 'text-case-converter']
+  },
+  'base64-converter': {
+    title: 'Free Base64 Converter – Encode/Decode Base64 Online 2025',
+    description: 'Convert text to Base64 encoding and decode Base64 strings instantly. Free online Base64 converter for developers and users.',
+    keywords: ['base64 converter', 'base64 encoder', 'base64 decoder', 'base64 encode', 'base64 decode'],
+    category: 'utility',
+    content: `Our Base64 converter allows you to encode text to Base64 format and decode Base64 strings back to readable text. Base64 encoding is widely used in web development and data transmission.
+
+What is Base64?
+Base64 is a binary-to-text encoding scheme that represents binary data in an ASCII string format. It's commonly used for:
+- Email attachments
+- Data URLs in web pages
+- API authentication
+- Storing binary data in text formats
+- URL-safe data transmission
+
+How It Works:
+- Encoding: Converts text to Base64 format
+- Decoding: Converts Base64 back to original text
+- Supports all ASCII characters
+- Handles Unicode text properly
+- URL-safe encoding available
+
+Use Cases:
+- Web development and APIs
+- Email systems
+- Data storage
+- Authentication tokens
+- Image embedding in HTML/CSS
+- Configuration files
+
+Technical Details:
+- Uses standard Base64 alphabet (A-Z, a-z, 0-9, +, /)
+- Padding with '=' characters when needed
+- Handles line breaks and whitespace
+- Supports large text inputs
+
+Our converter processes data entirely in your browser, ensuring privacy and security. No data is sent to external servers.`,
+    faqs: [
+      {
+        question: 'What is Base64 encoding used for?',
+        answer: 'Base64 is commonly used for encoding binary data in email systems, web APIs, data URLs, and anywhere you need to represent binary data as text.'
+      },
+      {
+        question: 'Is Base64 encoding secure?',
+        answer: 'Base64 is encoding, not encryption. It\'s not secure for sensitive data as it can be easily decoded. Use proper encryption for sensitive information.'
+      },
+      {
+        question: 'Can I encode images or files with this tool?',
+        answer: 'This tool is designed for text encoding/decoding. For images and files, you would need specialized Base64 encoding tools that handle binary data.'
+      }
+    ],
+    relatedTools: ['text-case-converter', 'json-formatter', 'password-generator']
+  },
+  'text-case-converter': {
+    title: 'Free Text Case Converter – Uppercase, Lowercase, Title Case Online 2025',
+    description: 'Convert text to different cases instantly with our free text case converter. Uppercase, lowercase, title case, and more text transformations.',
+    keywords: ['text case converter', 'uppercase converter', 'lowercase converter', 'title case converter', 'text transformer'],
+    category: 'utility',
+    content: `Our text case converter allows you to transform text into different cases instantly. Whether you need uppercase, lowercase, title case, or other text transformations, our tool makes it simple and fast.
+
+Supported Case Types:
+- UPPERCASE: Convert all text to capital letters
+- lowercase: Convert all text to small letters
+- Title Case: Capitalize First Letter Of Each Word
+- camelCase: Convert to camelCase format
+- PascalCase: Convert to PascalCase format
+- snake_case: Convert to snake_case format
+- kebab-case: Convert to kebab-case format
+
+How It Works:
+1. Paste or type your text in the input field
+2. Select the desired case transformation
+3. Click convert to see the result
+4. Copy the converted text
+
+Use Cases:
+- Programming and coding
+- Data formatting
+- Document preparation
+- Social media posts
+- Academic writing
+- Content creation
+
+Benefits:
+- Instant conversion
+- Multiple case options
+- No character limits
+- Copy to clipboard
+- Mobile-friendly interface
+
+Our converter handles all Unicode characters and preserves special characters while transforming the case. Perfect for developers, writers, and anyone who needs quick text transformations.`,
+    faqs: [
+      {
+        question: 'What types of text case conversions are supported?',
+        answer: 'We support uppercase, lowercase, title case, camelCase, PascalCase, snake_case, and kebab-case conversions.'
+      },
+      {
+        question: 'Can I convert long text documents?',
+        answer: 'Yes, our converter can handle large amounts of text. There are no strict character limits for the conversion process.'
+      },
+      {
+        question: 'Are special characters preserved during conversion?',
+        answer: 'Yes, special characters, numbers, and symbols are preserved during case conversion. Only alphabetic characters are transformed.'
+      }
+    ],
+    relatedTools: ['word-counter', 'json-formatter', 'base64-converter']
+  },
+  'word-counter': {
+    title: 'Free Word Counter – Character Count & Word Count Online 2025',
+    description: 'Count words, characters, sentences, and paragraphs instantly with our free word counter. Perfect for writers, students, and content creators.',
+    keywords: ['word counter', 'character counter', 'word count', 'character count', 'text counter'],
+    category: 'utility',
+    content: `Our word counter provides instant analysis of your text, counting words, characters, sentences, and paragraphs. Essential for writers, students, bloggers, and anyone who needs accurate text statistics.
+
+What We Count:
+- Words: Total number of words in your text
+- Characters: Total characters including spaces
+- Characters (no spaces): Characters excluding spaces
+- Sentences: Number of sentences
+- Paragraphs: Number of paragraphs
+- Reading time: Estimated time to read the text
+
+Features:
+- Real-time counting as you type
+- Detailed text statistics
+- Reading time estimation
+- No character limits
+- Mobile-friendly interface
+- Copy results functionality
+
+Use Cases:
+- Academic writing and essays
+- Blog posts and articles
+- Social media content
+- Email composition
+- SEO content optimization
+- Creative writing
+
+Benefits:
+- Instant results
+- Comprehensive statistics
+- Accurate counting
+- Easy to use
+- No registration required
+- Works offline after loading
+
+Our counter uses advanced text analysis to provide accurate counts and useful statistics. Perfect for meeting word count requirements, optimizing content length, and analyzing text composition.`,
+    faqs: [
+      {
+        question: 'How accurate is the word counting?',
+        answer: 'Our word counter is highly accurate and counts words, characters, and other text elements precisely according to standard counting methods.'
+      },
+      {
+        question: 'Does it count words in different languages?',
+        answer: 'Yes, our counter works with text in any language and accurately counts words regardless of the language used.'
+      },
+      {
+        question: 'Can I count text with special formatting?',
+        answer: 'Yes, the counter analyzes the plain text content and provides accurate counts regardless of formatting like bold, italic, or other styles.'
+      }
+    ],
+    relatedTools: ['text-case-converter', 'json-formatter', 'number-to-words']
+  },
+  'json-formatter': {
+    title: 'Free JSON Formatter – Format & Validate JSON Online 2025',
+    description: 'Format, validate, and beautify JSON data instantly with our free JSON formatter. Perfect for developers and API testing.',
+    keywords: ['JSON formatter', 'JSON validator', 'JSON beautifier', 'JSON prettifier', 'JSON minifier'],
+    category: 'utility',
+    content: `Our JSON formatter helps you format, validate, and beautify JSON data instantly. Whether you're a developer working with APIs or need to format JSON for better readability, our tool makes it simple and fast.
+
+Key Features:
+- Format and beautify JSON
+- Validate JSON syntax
+- Minify JSON (remove whitespace)
+- Syntax highlighting
+- Error detection and reporting
+- Copy formatted JSON
+- Download as file
+
+How It Works:
+1. Paste your JSON data in the input field
+2. Click "Format JSON" to beautify
+3. View formatted result with syntax highlighting
+4. Copy or download the formatted JSON
+
+Use Cases:
+- API development and testing
+- Data analysis and debugging
+- Configuration file formatting
+- Web development
+- Data exchange
+- Learning JSON structure
+
+Benefits:
+- Instant formatting
+- Syntax validation
+- Error highlighting
+- Easy to use interface
+- No data storage
+- Free and secure
+
+Our formatter handles large JSON files and provides clear error messages when JSON is invalid. Perfect for developers, data analysts, and anyone working with JSON data.`,
+    faqs: [
+      {
+        question: 'Can I format invalid JSON?',
+        answer: 'Our formatter will attempt to format valid JSON and will highlight syntax errors if the JSON is invalid, helping you identify and fix issues.'
+      },
+      {
+        question: 'Is there a limit on JSON file size?',
+        answer: 'While there are practical limits based on browser memory, our formatter can handle reasonably large JSON files for most use cases.'
+      },
+      {
+        question: 'Can I minify JSON to reduce file size?',
+        answer: 'Yes, our formatter can minify JSON by removing unnecessary whitespace and formatting to create compact JSON files.'
+      }
+    ],
+    relatedTools: ['base64-converter', 'text-case-converter', 'word-counter']
+  },
+  'currency-converter': {
+    title: 'Free Currency Converter – Real-time Exchange Rates 2025',
+    description: 'Convert currencies instantly with live exchange rates. Support for USD, EUR, GBP, INR, and 100+ currencies worldwide.',
+    keywords: ['currency converter', 'exchange rate', 'currency calculator', 'forex converter', 'money converter'],
+    category: 'utility',
+    content: `Our currency converter provides real-time exchange rates for over 100 currencies worldwide. Whether you're traveling, investing, or need to convert money for business, our tool offers accurate and up-to-date conversion rates.
+
+Supported Currencies:
+- Major currencies: USD, EUR, GBP, JPY, CAD, AUD
+- Asian currencies: INR, CNY, KRW, THB, SGD
+- European currencies: CHF, SEK, NOK, DKK
+- And many more...
+
+Features:
+- Real-time exchange rates
+- Historical rate tracking
+- Easy currency selection
+- Mobile-friendly interface
+- No registration required
+- Accurate calculations
+
+How It Works:
+1. Select your source currency
+2. Choose the target currency
+3. Enter the amount to convert
+4. View the converted amount instantly
+
+Use Cases:
+- Travel planning
+- International business
+- Investment analysis
+- E-commerce pricing
+- Financial planning
+- Educational purposes
+
+Benefits:
+- Live exchange rates
+- Fast conversion
+- Multiple currency support
+- Reliable data sources
+- Free to use
+- Regular updates
+
+Our converter uses trusted financial data sources to provide accurate exchange rates. Perfect for travelers, investors, and anyone dealing with international currencies.`,
+    faqs: [
+      {
+        question: 'How often are exchange rates updated?',
+        answer: 'Exchange rates are updated in real-time from reliable financial data sources to ensure accuracy.'
+      },
+      {
+        question: 'Are the rates the same as banks?',
+        answer: 'Our rates are market rates. Banks and exchange services may add fees or margins, so actual rates may vary.'
+      },
+      {
+        question: 'Can I convert between any two currencies?',
+        answer: 'Yes, our converter supports conversion between any of the 100+ supported currencies.'
+      }
+    ],
+    relatedTools: ['crypto-converter', 'tip-calculator', 'percentage-calculator']
   }
 }
 
