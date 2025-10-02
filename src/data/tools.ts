@@ -25,6 +25,30 @@ export const tools: Tool[] = [
     category: 'Health',
     component: 'AgeCalculator'
   },
+  {
+    id: 'calorie-calculator',
+    name: 'Calorie Calculator',
+    description: 'Calculate daily calorie needs for weight management',
+    icon: '🔥',
+    category: 'Health',
+    component: 'CalorieCalculator'
+  },
+  {
+    id: 'bmr-calculator',
+    name: 'BMR Calculator',
+    description: 'Calculate your Basal Metabolic Rate',
+    icon: '⚡',
+    category: 'Health',
+    component: 'BMRCalculator'
+  },
+  {
+    id: 'ideal-weight-calculator',
+    name: 'Ideal Weight Calculator',
+    description: 'Find your ideal weight range based on height',
+    icon: '⚖️',
+    category: 'Health',
+    component: 'IdealWeightCalculator'
+  },
 
   // Finance Tools
   {

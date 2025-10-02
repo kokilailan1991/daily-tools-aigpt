@@ -12,6 +12,9 @@ import { useEffect } from 'react'
 // Import all tool components
 import BMICalculator from '../components/tools/BMICalculator'
 import AgeCalculator from '../components/tools/AgeCalculator'
+import CalorieCalculator from '../components/tools/CalorieCalculator'
+import BMRCalculator from '../components/tools/BMRCalculator'
+import IdealWeightCalculator from '../components/tools/IdealWeightCalculator'
 import PercentageCalculator from '../components/tools/PercentageCalculator'
 import LoanEMICalculator from '../components/tools/LoanEMICalculator'
 import CurrencyConverter from '../components/tools/CurrencyConverter'
@@ -59,6 +62,9 @@ import MemeTextGenerator from '../components/tools/MemeTextGenerator'
 const toolComponents: { [key: string]: React.ComponentType } = {
   BMICalculator,
   AgeCalculator,
+  CalorieCalculator,
+  BMRCalculator,
+  IdealWeightCalculator,
   PercentageCalculator,
   LoanEMICalculator,
   CurrencyConverter,
