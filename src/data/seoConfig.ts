@@ -801,7 +801,609 @@ Our converter uses trusted financial data sources to provide accurate exchange r
       }
     ],
     relatedTools: ['crypto-converter', 'tip-calculator', 'percentage-calculator']
-  }
+  },
+  // Finance Tools
+  'percentage-calculator': {
+    title: 'Free Percentage Calculator – Calculate Percentages Online 2025',
+    description: 'Calculate percentages instantly with our free percentage calculator. Find percentage increase, decrease, and percentage of numbers.',
+    keywords: ['percentage calculator', 'percent calculator', 'percentage increase', 'percentage decrease', 'percentage of number'],
+    category: 'finance',
+    content: `Our percentage calculator helps you perform various percentage calculations quickly and accurately. Whether you need to find percentage increase, decrease, or calculate percentages of numbers, our tool makes it simple.
+
+Key Calculations:
+- Percentage of a number (e.g., 25% of 200)
+- Percentage increase/decrease
+- What percentage is X of Y
+- Percentage change between two values
+- Discount and markup calculations
+
+Common Use Cases:
+- Tax calculations
+- Discount and sale prices
+- Investment returns
+- Grade calculations
+- Business profit margins
+- Salary increases
+
+How It Works:
+1. Select the calculation type
+2. Enter the required values
+3. Click calculate to get results
+4. View detailed explanations
+
+Benefits:
+- Multiple calculation types
+- Step-by-step explanations
+- Error-free calculations
+- Mobile-friendly interface
+- Free to use
+- No registration required
+
+Perfect for students, professionals, and anyone who needs accurate percentage calculations for financial planning, academic work, or business analysis.`,
+    faqs: [
+      {
+        question: 'How do I calculate percentage increase?',
+        answer: 'Percentage increase = ((New Value - Original Value) / Original Value) × 100. Our calculator does this automatically when you select percentage increase.'
+      },
+      {
+        question: 'What is the formula for percentage of a number?',
+        answer: 'Percentage of a number = (Percentage / 100) × Number. For example, 25% of 200 = (25/100) × 200 = 50.'
+      },
+      {
+        question: 'Can I calculate discounts and markups?',
+        answer: 'Yes! Use percentage decrease for discounts and percentage increase for markups. Our calculator handles all common percentage scenarios.'
+      }
+    ],
+    relatedTools: ['tip-calculator', 'gst-calculator', 'emi-calculator']
+  },
+  'tip-calculator': {
+    title: 'Free Tip Calculator – Calculate Tips and Split Bills Online 2025',
+    description: 'Calculate tips instantly with our free tip calculator. Split bills, calculate tip percentages, and manage restaurant expenses easily.',
+    keywords: ['tip calculator', 'bill splitter', 'restaurant tip', 'gratuity calculator', 'bill calculator'],
+    category: 'finance',
+    content: `Our tip calculator helps you calculate appropriate tips for restaurants, services, and other situations. Split bills with friends and calculate fair tip amounts based on service quality.
+
+Features:
+- Calculate tip amounts (15%, 18%, 20%, custom)
+- Split bills among multiple people
+- Include tax in calculations
+- Round up/down options
+- Service quality ratings
+- Multiple currency support
+
+How It Works:
+1. Enter the bill amount
+2. Select tip percentage or enter custom amount
+3. Choose number of people to split
+4. Get individual amounts and total
+
+Use Cases:
+- Restaurant dining
+- Delivery services
+- Hotel services
+- Taxi rides
+- Personal services
+- Group outings
+
+Benefits:
+- Quick and accurate calculations
+- Fair bill splitting
+- Multiple tip percentages
+- Mobile-friendly
+- No math required
+- Free to use
+
+Perfect for dining out, traveling, and any situation where you need to calculate tips and split expenses fairly with friends or colleagues.`,
+    faqs: [
+      {
+        question: 'What is the standard tip percentage?',
+        answer: 'Standard tip percentages vary by service: 15% for basic service, 18% for good service, 20% for excellent service. Our calculator includes these preset options.'
+      },
+      {
+        question: 'Should I tip on tax?',
+        answer: 'It depends on local customs. In many places, tipping on the pre-tax amount is standard, but some prefer to tip on the total including tax.'
+      },
+      {
+        question: 'How do I split the bill fairly?',
+        answer: 'Our calculator can split the total bill (including tip) equally among all people, or you can specify individual amounts if orders vary significantly.'
+      }
+    ],
+    relatedTools: ['percentage-calculator', 'currency-converter', 'emi-calculator']
+  },
+  'gst-calculator': {
+    title: 'Free GST Calculator – Calculate GST Amount and Total Online 2025',
+    description: 'Calculate GST instantly with our free GST calculator. Find GST amount, total price, and reverse GST calculations for India.',
+    keywords: ['GST calculator', 'GST amount', 'GST total', 'India GST', 'goods and services tax'],
+    category: 'finance',
+    content: `Our GST calculator helps you calculate Goods and Services Tax for India. Calculate GST amount, total price including GST, and reverse GST calculations for accurate tax computations.
+
+GST Rates in India:
+- 0% - Essential goods and services
+- 5% - Common use items
+- 12% - Processed foods and items
+- 18% - Standard rate for most goods
+- 28% - Luxury items and demerit goods
+
+Calculation Types:
+- Add GST to base amount
+- Calculate GST from total amount
+- Find base amount from GST total
+- Multiple GST rate calculations
+
+How It Works:
+1. Enter the amount
+2. Select GST rate (0%, 5%, 12%, 18%, 28%)
+3. Choose calculation type
+4. Get detailed GST breakdown
+
+Use Cases:
+- Business invoicing
+- Purchase calculations
+- Tax planning
+- Financial reporting
+- E-commerce pricing
+- Budget planning
+
+Benefits:
+- All GST rates supported
+- Accurate calculations
+- Detailed breakdown
+- Mobile-friendly
+- Free to use
+- No registration required
+
+Perfect for businesses, consumers, and anyone dealing with GST calculations in India.`,
+    faqs: [
+      {
+        question: 'What are the current GST rates in India?',
+        answer: 'GST rates are 0%, 5%, 12%, 18%, and 28%. Most goods and services fall under 18% GST rate.'
+      },
+      {
+        question: 'How do I calculate GST from total amount?',
+        answer: 'Use our reverse GST calculation: GST Amount = Total Amount × GST Rate / (100 + GST Rate).'
+      },
+      {
+        question: 'Is GST calculated on MRP?',
+        answer: 'GST is typically calculated on the base price before adding other taxes. Our calculator follows standard GST calculation methods.'
+      }
+    ],
+    relatedTools: ['percentage-calculator', 'income-tax-estimator', 'emi-calculator']
+  },
+  'income-tax-estimator': {
+    title: 'Free Income Tax Calculator India – Calculate Income Tax 2025',
+    description: 'Calculate your income tax liability with our free income tax calculator for India. Get accurate tax estimates and planning insights.',
+    keywords: ['income tax calculator', 'tax calculator India', 'income tax estimator', 'tax planning', 'income tax 2025'],
+    category: 'finance',
+    content: `Our income tax calculator helps you estimate your tax liability for the financial year in India. Calculate tax under old and new tax regimes with accurate deductions and exemptions.
+
+Tax Regimes:
+- Old Tax Regime (with deductions)
+- New Tax Regime (simplified)
+- Compare both regimes
+- Choose optimal regime
+
+Income Categories:
+- Salary income
+- Business income
+- Capital gains
+- Other income sources
+- Deductions and exemptions
+
+Features:
+- Multiple income sources
+- Standard deductions
+- Section 80C, 80D deductions
+- HRA calculations
+- TDS estimations
+- Tax planning tips
+
+How It Works:
+1. Enter your annual income
+2. Add deductions and exemptions
+3. Select tax regime
+4. Get detailed tax calculation
+5. Compare old vs new regime
+
+Use Cases:
+- Tax planning
+- Budget preparation
+- Investment decisions
+- Salary negotiations
+- Financial planning
+- Tax filing preparation
+
+Benefits:
+- Accurate calculations
+- Both tax regimes
+- Detailed breakdown
+- Planning insights
+- Free to use
+- Updated tax rates
+
+Important: This calculator provides estimates. Consult a tax professional for accurate tax filing.`,
+    faqs: [
+      {
+        question: 'Which tax regime should I choose?',
+        answer: 'It depends on your deductions. If you have significant deductions (HRA, 80C, etc.), the old regime might be better. Our calculator helps compare both regimes.'
+      },
+      {
+        question: 'What deductions are available?',
+        answer: 'Common deductions include Section 80C (up to ₹1.5L), 80D (health insurance), HRA, and standard deduction. Our calculator includes these options.'
+      },
+      {
+        question: 'Is this calculator updated for current tax year?',
+        answer: 'Our calculator uses current tax rates and slabs. However, always verify with the latest income tax rules and consult a professional for filing.'
+      }
+    ],
+    relatedTools: ['gst-calculator', 'emi-calculator', 'sip-calculator']
+  },
+  'compound-interest-calculator': {
+    title: 'Free Compound Interest Calculator – Calculate Compound Interest Online 2025',
+    description: 'Calculate compound interest instantly with our free compound interest calculator. See how your investments grow over time with compound returns.',
+    keywords: ['compound interest calculator', 'compound interest formula', 'investment calculator', 'compound returns', 'interest calculator'],
+    category: 'finance',
+    content: `Our compound interest calculator helps you understand how your investments grow over time with compound returns. Calculate future value, total interest earned, and see the power of compound interest.
+
+Compound Interest Formula:
+A = P(1 + r/n)^(nt)
+Where:
+- A = Final amount
+- P = Principal amount
+- r = Annual interest rate
+- n = Number of times interest compounds per year
+- t = Time in years
+
+Key Features:
+- Multiple compounding frequencies (daily, monthly, quarterly, annually)
+- Investment vs loan calculations
+- Detailed breakdown by year
+- Comparison with simple interest
+- Future value projections
+- Tax implications
+
+How It Works:
+1. Enter principal amount
+2. Set annual interest rate
+3. Choose time period
+4. Select compounding frequency
+5. Get detailed results
+
+Use Cases:
+- Investment planning
+- Retirement planning
+- Education fund planning
+- Business growth projections
+- Loan calculations
+- Financial goal setting
+
+Benefits:
+- Accurate calculations
+- Multiple scenarios
+- Visual growth charts
+- Free to use
+- Mobile-friendly
+- No registration required
+
+Perfect for investors, financial planners, and anyone wanting to understand the power of compound interest for wealth building.`,
+    faqs: [
+      {
+        question: 'What is compound interest?',
+        answer: 'Compound interest is interest calculated on the initial principal and the accumulated interest from previous periods. It grows your money exponentially over time.'
+      },
+      {
+        question: 'How often should interest compound?',
+        answer: 'More frequent compounding (daily vs annually) results in higher returns. Most investments compound daily or monthly for maximum growth.'
+      },
+      {
+        question: 'What is the difference between simple and compound interest?',
+        answer: 'Simple interest is calculated only on the principal amount, while compound interest is calculated on principal plus previously earned interest, leading to exponential growth.'
+      }
+    ],
+    relatedTools: ['sip-calculator', 'emi-calculator', 'risk-calculator']
+  },
+  'risk-calculator': {
+    title: 'Free Investment Risk Calculator – Assess Investment Risk Online 2025',
+    description: 'Calculate investment risk with our free risk calculator. Assess portfolio risk, volatility, and make informed investment decisions.',
+    keywords: ['risk calculator', 'investment risk', 'portfolio risk', 'volatility calculator', 'risk assessment'],
+    category: 'finance',
+    content: `Our investment risk calculator helps you assess the risk level of your investments and portfolio. Calculate risk metrics, volatility, and make informed investment decisions based on your risk tolerance.
+
+Risk Metrics:
+- Standard Deviation (volatility)
+- Beta coefficient
+- Value at Risk (VaR)
+- Sharpe Ratio
+- Risk-adjusted returns
+- Correlation analysis
+
+Risk Categories:
+- Low Risk: Government bonds, fixed deposits
+- Medium Risk: Balanced funds, corporate bonds
+- High Risk: Equity funds, stocks
+- Very High Risk: Small-cap stocks, crypto
+
+How It Works:
+1. Enter your investment details
+2. Select asset types and allocation
+3. Set time horizon
+4. Choose risk tolerance level
+5. Get risk assessment report
+
+Use Cases:
+- Portfolio optimization
+- Investment planning
+- Risk management
+- Asset allocation
+- Retirement planning
+- Financial goal setting
+
+Benefits:
+- Comprehensive risk analysis
+- Multiple risk metrics
+- Portfolio recommendations
+- Risk tolerance assessment
+- Free to use
+- Professional insights
+
+Important: This calculator provides estimates for educational purposes. Consult a financial advisor for personalized investment advice.`,
+    faqs: [
+      {
+        question: 'What is investment risk?',
+        answer: 'Investment risk is the possibility of losing money or not achieving expected returns. It includes market risk, credit risk, liquidity risk, and inflation risk.'
+      },
+      {
+        question: 'How do I determine my risk tolerance?',
+        answer: 'Consider your age, income stability, investment goals, time horizon, and emotional comfort with market fluctuations. Younger investors can typically take more risk.'
+      },
+      {
+        question: 'What is a good Sharpe ratio?',
+        answer: 'A Sharpe ratio above 1.0 is considered good, above 2.0 is very good, and above 3.0 is excellent. It measures risk-adjusted returns.'
+      }
+    ],
+    relatedTools: ['sip-calculator', 'compound-interest-calculator', 'emi-calculator']
+  },
+  'swp-calculator': {
+    title: 'Free SWP Calculator – Calculate Systematic Withdrawal Plan Online 2025',
+    description: 'Calculate SWP returns with our free SWP calculator. Plan systematic withdrawals from your investments for regular income.',
+    keywords: ['SWP calculator', 'systematic withdrawal plan', 'SWP returns', 'monthly income', 'investment withdrawal'],
+    category: 'finance',
+    content: `Our SWP calculator helps you plan systematic withdrawals from your investments to generate regular income. Calculate how long your corpus will last and optimize withdrawal strategies.
+
+SWP Features:
+- Regular monthly/quarterly withdrawals
+- Capital appreciation potential
+- Tax efficiency
+- Flexibility in withdrawal amounts
+- Professional fund management
+- Diversified portfolio
+
+How It Works:
+1. Enter initial investment amount
+2. Set expected returns
+3. Choose withdrawal frequency and amount
+4. Set time period
+5. Get detailed SWP analysis
+
+Benefits:
+- Regular income generation
+- Potential for capital growth
+- Tax-efficient withdrawals
+- Professional management
+- Flexibility in amounts
+- Systematic approach
+
+Use Cases:
+- Retirement income planning
+- Regular income needs
+- Education fund withdrawals
+- Emergency fund management
+- Wealth distribution
+- Tax planning
+
+Important: Past performance doesn't guarantee future results. Consider market risks and consult a financial advisor.`,
+    faqs: [
+      {
+        question: 'What is SWP (Systematic Withdrawal Plan)?',
+        answer: 'SWP allows you to withdraw a fixed amount regularly from your mutual fund investments while keeping the remaining amount invested for potential growth.'
+      },
+      {
+        question: 'Is SWP better than FD for regular income?',
+        answer: 'SWP offers potential for higher returns and tax efficiency, but comes with market risk. FDs offer guaranteed returns but lower growth potential.'
+      },
+      {
+        question: 'How much can I withdraw through SWP?',
+        answer: 'You can typically withdraw any amount, but it\'s recommended to withdraw 4-6% annually to maintain corpus longevity and account for inflation.'
+      }
+    ],
+    relatedTools: ['sip-calculator', 'emi-calculator', 'compound-interest-calculator']
+  },
+  'simple-interest-calculator': {
+    title: 'Free Simple Interest Calculator – Calculate Simple Interest Online 2025',
+    description: 'Calculate simple interest instantly with our free simple interest calculator. Perfect for loans, deposits, and basic interest calculations.',
+    keywords: ['simple interest calculator', 'simple interest formula', 'loan calculator', 'interest calculator', 'simple interest formula'],
+    category: 'finance',
+    content: `Our simple interest calculator helps you calculate simple interest for loans, deposits, and other financial transactions. Simple interest is calculated only on the principal amount.
+
+Simple Interest Formula:
+I = P × R × T
+Where:
+- I = Interest amount
+- P = Principal amount
+- R = Annual interest rate (as decimal)
+- T = Time period in years
+
+Key Features:
+- Principal and interest calculations
+- Multiple time periods
+- Annual, monthly, daily rates
+- Total amount calculations
+- Comparison with compound interest
+- Loan and deposit scenarios
+
+How It Works:
+1. Enter principal amount
+2. Set interest rate
+3. Choose time period
+4. Get interest and total amount
+5. View detailed breakdown
+
+Use Cases:
+- Personal loans
+- Short-term deposits
+- Educational loans
+- Vehicle financing
+- Basic financial planning
+- Interest comparisons
+
+Benefits:
+- Quick calculations
+- Easy to understand
+- Multiple scenarios
+- Free to use
+- Mobile-friendly
+- No registration required
+
+Perfect for basic financial calculations, loan planning, and understanding simple interest concepts.`,
+    faqs: [
+      {
+        question: 'What is the difference between simple and compound interest?',
+        answer: 'Simple interest is calculated only on the principal amount, while compound interest is calculated on principal plus previously earned interest.'
+      },
+      {
+        question: 'When is simple interest used?',
+        answer: 'Simple interest is commonly used for short-term loans, some savings accounts, and basic financial calculations where compounding doesn\'t apply.'
+      },
+      {
+        question: 'How do I convert annual rate to monthly?',
+        answer: 'Divide the annual rate by 12. For example, 12% annual rate = 1% monthly rate. Our calculator handles various time period conversions.'
+      }
+    ],
+    relatedTools: ['emi-calculator', 'compound-interest-calculator', 'percentage-calculator']
+  },
+  'cgpa-converter': {
+    title: 'Free CGPA Calculator – Convert CGPA to Percentage Online 2025',
+    description: 'Convert CGPA to percentage instantly with our free CGPA calculator. Calculate GPA, CGPA, and percentage for academic grading.',
+    keywords: ['CGPA calculator', 'GPA calculator', 'CGPA to percentage', 'percentage to CGPA', 'grade calculator'],
+    category: 'utility',
+    content: `Our CGPA calculator helps you convert between CGPA (Cumulative Grade Point Average) and percentage grades. Calculate GPA, CGPA, and percentage conversions for academic grading systems.
+
+Grading Systems:
+- 4.0 scale (US system)
+- 10.0 scale (Indian system)
+- Percentage system
+- Letter grades (A, B, C, D, F)
+- Grade points
+
+Conversion Methods:
+- CGPA to Percentage
+- Percentage to CGPA
+- GPA calculations
+- Semester-wise calculations
+- Cumulative calculations
+- Grade point averages
+
+How It Works:
+1. Select conversion type
+2. Enter CGPA or percentage
+3. Choose grading scale
+4. Get accurate conversion
+5. View grade interpretation
+
+Use Cases:
+- Academic planning
+- University applications
+- Scholarship applications
+- Academic transcripts
+- Grade analysis
+- Performance tracking
+
+Benefits:
+- Multiple grading scales
+- Accurate conversions
+- Easy to use
+- Free service
+- Mobile-friendly
+- No registration required
+
+Perfect for students, academic counselors, and anyone dealing with grade conversions for educational purposes.`,
+    faqs: [
+      {
+        question: 'How do I convert CGPA to percentage?',
+        answer: 'For 10-point scale: Percentage = CGPA × 9.5. For 4-point scale: Percentage = (CGPA/4) × 100. Our calculator handles multiple conversion methods.'
+      },
+      {
+        question: 'What is the difference between GPA and CGPA?',
+        answer: 'GPA (Grade Point Average) is for a single semester, while CGPA (Cumulative Grade Point Average) is the average across all semesters.'
+      },
+      {
+        question: 'Which grading scale should I use?',
+        answer: 'Use the scale that matches your institution. Most Indian universities use 10-point scale, while US universities typically use 4-point scale.'
+      }
+    ],
+    relatedTools: ['percentage-calculator', 'age-calculator', 'compound-interest-calculator']
+  },
+  'equation-solver': {
+    title: 'Free Equation Solver – Solve Linear and Quadratic Equations Online 2025',
+    description: 'Solve equations instantly with our free equation solver. Solve linear equations, quadratic equations, and more with step-by-step solutions.',
+    keywords: ['equation solver', 'linear equation solver', 'quadratic equation solver', 'algebra solver', 'math solver'],
+    category: 'utility',
+    content: `Our equation solver helps you solve various types of equations instantly. Solve linear equations, quadratic equations, and other algebraic expressions with step-by-step solutions.
+
+Supported Equations:
+- Linear equations (ax + b = c)
+- Quadratic equations (ax² + bx + c = 0)
+- Simple algebraic equations
+- One-variable equations
+- Basic polynomial equations
+
+Key Features:
+- Step-by-step solutions
+- Multiple equation types
+- Real and complex solutions
+- Detailed explanations
+- Visual representations
+- Free to use
+
+How It Works:
+1. Select equation type
+2. Enter coefficients
+3. Click solve
+4. View step-by-step solution
+5. Get final answer
+
+Use Cases:
+- Homework help
+- Exam preparation
+- Learning algebra
+- Mathematical analysis
+- Problem solving
+- Academic research
+
+Benefits:
+- Instant solutions
+- Educational value
+- Step-by-step process
+- Multiple equation types
+- Free service
+- Mobile-friendly
+
+Perfect for students, teachers, and anyone learning or working with algebraic equations.`,
+    faqs: [
+      {
+        question: 'What types of equations can be solved?',
+        answer: 'Our solver supports linear equations, quadratic equations, and simple algebraic expressions with one variable.'
+      },
+      {
+        question: 'Does the solver show step-by-step solutions?',
+        answer: 'Yes! Our equation solver provides detailed step-by-step solutions to help you understand the solving process.'
+      },
+      {
+        question: 'Can I solve equations with complex solutions?',
+        answer: 'Yes, our solver can handle equations with both real and complex solutions, providing accurate mathematical results.'
+      }
+    ],
+    relatedTools: ['percentage-calculator', 'compound-interest-calculator', 'unit-converter']
+  },
 }
 
 // Add more tool configurations as needed

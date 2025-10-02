@@ -27,7 +27,7 @@ function App() {
             <Route path="/tool/:toolId" element={<ToolPage />} />
             <Route path="/health/:toolId" element={<ToolPage />} />
             <Route path="/finance/:toolId" element={<ToolPage />} />
-            <Route path="/utility/:toolId" element={<ToolPage />} />
+            <Route path="/utilities/:toolId" element={<ToolPage />} />
             <Route path="/text/:toolId" element={<ToolPage />} />
             <Route path="/time/:toolId" element={<ToolPage />} />
             <Route path="/conversion/:toolId" element={<ToolPage />} />
