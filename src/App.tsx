@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage'
 import ToolPage from './pages/ToolPage'
 import BlogPage from './pages/BlogPage'
 import BlogPostPage from './pages/BlogPostPage'
+import DealsPage from './pages/DealsPage'
 import NotFound from './components/NotFound'
 import { Toaster } from './components/ui/toaster'
 import AnalyticsDashboard from './components/AnalyticsDashboard'
@@ -19,6 +20,7 @@ function App() {
             <Route path="/tool/:toolId" element={<ToolPage />} />
             <Route path="/blog" element={<BlogPage />} />
             <Route path="/blog/:postId" element={<BlogPostPage />} />
+            <Route path="/deals" element={<DealsPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
           <Toaster />
