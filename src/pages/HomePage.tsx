@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Search, Moon, Sun, BookOpen, ShoppingBag } from 'lucide-react'
+import { Search, Moon, Sun, BookOpen, ShoppingBag, Heart } from 'lucide-react'
 import { useTheme } from '../contexts/ThemeContext'
 import { tools } from '../data/tools'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card'
@@ -122,6 +122,15 @@ export default function HomePage() {
               </h1>
             </div>
             <div className="flex items-center space-x-2">
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => window.location.href = '#/health'}
+                className="h-9"
+              >
+                <Heart className="mr-2 h-4 w-4" />
+                Health
+              </Button>
               <Button
                 variant="ghost"
                 size="sm"
