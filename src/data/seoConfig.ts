@@ -1404,6 +1404,342 @@ Perfect for students, teachers, and anyone learning or working with algebraic eq
     ],
     relatedTools: ['percentage-calculator', 'compound-interest-calculator', 'unit-converter']
   },
+  // Time Tools
+  'date-difference-calculator': {
+    title: 'Free Date Difference Calculator – Calculate Days Between Dates Online 2025',
+    description: 'Calculate the difference between two dates instantly with our free date calculator. Find days, weeks, months, and years between dates.',
+    keywords: ['date difference calculator', 'days between dates', 'date calculator', 'time difference', 'date subtractor'],
+    category: 'time',
+    content: `Our date difference calculator helps you calculate the exact time between two dates. Find the number of days, weeks, months, and years between any two dates with precise calculations.
+
+Calculation Features:
+- Days between dates
+- Weeks between dates
+- Months between dates
+- Years between dates
+- Business days only
+- Include/exclude end date
+- Leap year calculations
+- Different calendar systems
+
+Key Features:
+- Precise calculations
+- Multiple time units
+- Business day options
+- Leap year handling
+- Easy date selection
+- Instant results
+- Free to use
+
+How It Works:
+1. Select start date
+2. Select end date
+3. Choose calculation type
+4. Get detailed results
+5. View breakdown by units
+
+Use Cases:
+- Project planning
+- Age calculations
+- Vacation planning
+- Event countdowns
+- Business planning
+- Academic schedules
+- Personal milestones
+
+Benefits:
+- Accurate calculations
+- Multiple formats
+- Easy to use
+- Mobile-friendly
+- Free service
+- No registration required
+
+Perfect for project managers, event planners, students, and anyone who needs to calculate time differences between dates.`,
+    faqs: [
+      {
+        question: 'How accurate are the date calculations?',
+        answer: 'Our calculator provides precise calculations including leap years, different month lengths, and handles all calendar complexities accurately.'
+      },
+      {
+        question: 'Can I calculate business days only?',
+        answer: 'Yes! You can choose to calculate only business days (Monday-Friday) excluding weekends for work-related calculations.'
+      },
+      {
+        question: 'What if the end date is before the start date?',
+        answer: 'Our calculator handles this correctly and will show negative results, indicating how many days the end date is before the start date.'
+      }
+    ],
+    relatedTools: ['age-calculator', 'timezone-converter', 'stopwatch-timer']
+  },
+  'timezone-converter': {
+    title: 'Free Timezone Converter – Convert Time Between Timezones Online 2025',
+    description: 'Convert time between different timezones instantly with our free timezone converter. Find current time in any city worldwide.',
+    keywords: ['timezone converter', 'time converter', 'world clock', 'time zone converter', 'international time'],
+    category: 'time',
+    content: `Our timezone converter helps you convert time between different timezones instantly. Find the current time in any city worldwide and schedule meetings across time zones.
+
+Conversion Features:
+- 200+ cities worldwide
+- Major time zones (UTC, EST, PST, GMT, etc.)
+- Daylight saving time handling
+- Custom time zone selection
+- Current time display
+- Meeting scheduler
+- Time zone abbreviations
+
+Key Features:
+- Real-time conversion
+- Multiple cities
+- DST awareness
+- Easy selection
+- Instant results
+- Free to use
+- Mobile-friendly
+
+How It Works:
+1. Select source timezone
+2. Select destination timezone
+3. Enter time or use current
+4. Get converted time
+5. View all time zones
+
+Use Cases:
+- International meetings
+- Travel planning
+- Remote work coordination
+- Global business
+- Event planning
+- Communication scheduling
+- Academic coordination
+
+Benefits:
+- Accurate conversions
+- DST handling
+- Multiple formats
+- Easy to use
+- Free service
+- Real-time updates
+
+Perfect for business professionals, travelers, remote workers, and anyone coordinating across multiple time zones.`,
+    faqs: [
+      {
+        question: 'Does the converter handle daylight saving time?',
+        answer: 'Yes! Our converter automatically adjusts for daylight saving time changes and shows the correct local time for each timezone.'
+      },
+      {
+        question: 'Can I find the current time in any city?',
+        answer: 'Yes! Our converter supports 200+ cities worldwide and shows the current time in real-time for any selected location.'
+      },
+      {
+        question: 'How do I schedule meetings across time zones?',
+        answer: 'Enter your local time and select the target timezone to see when your meeting will be in their local time, making coordination easy.'
+      }
+    ],
+    relatedTools: ['date-difference-calculator', 'age-calculator', 'stopwatch-timer']
+  },
+  'stopwatch-timer': {
+    title: 'Free Stopwatch Timer – Online Stopwatch and Timer 2025',
+    description: 'Use our free online stopwatch and timer. Track time with precision, set countdown timers, and manage your time effectively.',
+    keywords: ['stopwatch', 'timer', 'countdown timer', 'online stopwatch', 'time tracker'],
+    category: 'time',
+    content: `Our stopwatch and timer tool helps you track time with precision. Use the stopwatch to measure elapsed time or set countdown timers for various activities and tasks.
+
+Timer Features:
+- Stopwatch functionality
+- Countdown timer
+- Lap time tracking
+- Split time recording
+- Sound alerts
+- Visual indicators
+- Pause and resume
+- Reset functionality
+
+Key Features:
+- Precise timing
+- Multiple modes
+- Sound notifications
+- Easy controls
+- Mobile-friendly
+- Free to use
+- No registration required
+
+How It Works:
+1. Choose stopwatch or timer mode
+2. Set time (for timer)
+3. Start timing
+4. Use lap/split features
+5. Stop and view results
+
+Use Cases:
+- Exercise and fitness
+- Cooking and baking
+- Work productivity
+- Study sessions
+- Presentations
+- Sports timing
+- Game timing
+
+Benefits:
+- Accurate timing
+- Multiple features
+- Easy to use
+- Free service
+- Mobile optimized
+- No downloads needed
+
+Perfect for athletes, cooks, students, professionals, and anyone who needs precise time tracking for their activities.`,
+    faqs: [
+      {
+        question: 'Can I use both stopwatch and timer?',
+        answer: 'Yes! Our tool includes both stopwatch (to measure elapsed time) and countdown timer (to count down to zero) functionality.'
+      },
+      {
+        question: 'Does the timer have sound alerts?',
+        answer: 'Yes! The countdown timer includes sound alerts to notify you when the time is up, and you can customize the alert sound.'
+      },
+      {
+        question: 'Can I track multiple lap times?',
+        answer: 'Yes! The stopwatch includes lap time functionality, allowing you to record multiple split times during your timing session.'
+      }
+    ],
+    relatedTools: ['date-difference-calculator', 'timezone-converter', 'daily-planner']
+  },
+  'daily-planner': {
+    title: 'Free Daily Planner – Online Daily Schedule Planner 2025',
+    description: 'Plan your day effectively with our free daily planner. Organize tasks, set priorities, and manage your daily schedule online.',
+    keywords: ['daily planner', 'schedule planner', 'daily organizer', 'task planner', 'day planner'],
+    category: 'time',
+    content: `Our daily planner helps you organize your day effectively. Plan tasks, set priorities, schedule activities, and manage your daily routine with our comprehensive planning tool.
+
+Planning Features:
+- Task management
+- Time blocking
+- Priority setting
+- Progress tracking
+- Notes and reminders
+- Category organization
+- Deadline management
+- Goal setting
+
+Key Features:
+- Easy task entry
+- Time management
+- Priority levels
+- Progress tracking
+- Mobile-friendly
+- Free to use
+- No registration required
+
+How It Works:
+1. Add your tasks
+2. Set time blocks
+3. Assign priorities
+4. Track progress
+5. Review and adjust
+
+Use Cases:
+- Daily productivity
+- Work planning
+- Study schedules
+- Personal organization
+- Goal tracking
+- Time management
+- Routine building
+
+Benefits:
+- Better organization
+- Time efficiency
+- Goal achievement
+- Stress reduction
+- Free service
+- Easy to use
+- Flexible planning
+
+Perfect for professionals, students, busy parents, and anyone looking to improve their daily productivity and time management.`,
+    faqs: [
+      {
+        question: 'Can I organize tasks by priority?',
+        answer: 'Yes! Our planner allows you to set priority levels for tasks (high, medium, low) to help you focus on what matters most.'
+      },
+      {
+        question: 'Is the planner available on mobile?',
+        answer: 'Yes! Our daily planner is fully responsive and works perfectly on mobile devices for planning on the go.'
+      },
+      {
+        question: 'Can I track my progress throughout the day?',
+        answer: 'Yes! You can mark tasks as completed and track your progress to see how much you\'ve accomplished during the day.'
+      }
+    ],
+    relatedTools: ['stopwatch-timer', 'date-difference-calculator', 'age-calculator']
+  },
+  'age-in-days-calculator': {
+    title: 'Free Age in Days Calculator – Calculate Age in Days Online 2025',
+    description: 'Calculate your exact age in days with our free age calculator. Find out how many days old you are with precise calculations.',
+    keywords: ['age in days calculator', 'days old calculator', 'age calculator days', 'birthday calculator', 'days since birth'],
+    category: 'time',
+    content: `Our age in days calculator helps you find out exactly how many days old you are. Calculate your precise age in days from your birth date to today with accurate leap year handling.
+
+Calculation Features:
+- Exact days since birth
+- Leap year calculations
+- Current age display
+- Multiple date formats
+- Precise calculations
+- Age milestones
+- Birthday countdown
+- Life statistics
+
+Key Features:
+- Accurate calculations
+- Leap year handling
+- Easy date entry
+- Instant results
+- Age milestones
+- Free to use
+- Mobile-friendly
+
+How It Works:
+1. Enter your birth date
+2. Click calculate
+3. View your age in days
+4. See additional statistics
+5. Share your results
+
+Use Cases:
+- Personal curiosity
+- Birthday celebrations
+- Life milestones
+- Social media posts
+- Fun calculations
+- Age verification
+- Life statistics
+
+Benefits:
+- Precise calculations
+- Fun and engaging
+- Easy to use
+- Free service
+- Shareable results
+- Mobile optimized
+
+Perfect for anyone curious about their exact age in days, celebrating milestones, or sharing fun facts about their age.`,
+    faqs: [
+      {
+        question: 'How accurate is the days calculation?',
+        answer: 'Our calculator provides precise calculations including leap years and accounts for the exact number of days in each month for maximum accuracy.'
+      },
+      {
+        question: 'Does it include leap years?',
+        answer: 'Yes! The calculator automatically handles leap years and accounts for the extra day in February during leap years.'
+      },
+      {
+        question: 'Can I calculate age in days for any date?',
+        answer: 'Yes! You can enter any birth date and the calculator will show how many days old that person would be today.'
+      }
+    ],
+    relatedTools: ['age-calculator', 'date-difference-calculator', 'timezone-converter']
+  }
 }
 
 // Add more tool configurations as needed
