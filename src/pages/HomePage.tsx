@@ -214,7 +214,7 @@ export default function HomePage() {
               >
                 <Card 
                   className="h-full hover:shadow-lg transition-all duration-300 cursor-pointer group hover:scale-105 tool-btn"
-                  onClick={() => window.location.href = `#/tool/${tool.id}`}
+                  onClick={() => window.location.href = `#/${tool.category.toLowerCase()}/${tool.id}`}
                   data-tool={tool.name}
                 >
                   <CardHeader className="pb-3">
@@ -438,11 +438,11 @@ export default function HomePage() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
             {[
-              { id: 'loan-emi-calculator', name: 'EMI Calculator', icon: '💰', description: 'Calculate loan EMI and interest' },
-              { id: 'sip-calculator', name: 'SIP Calculator', icon: '📈', description: 'Calculate SIP returns' },
-              { id: 'risk-calculator', name: 'Risk Calculator', icon: '⚠️', description: 'Calculate investment risk' },
-              { id: 'currency-converter', name: 'Currency Converter', icon: '💱', description: 'Convert between currencies' },
-              { id: 'bmi-calculator', name: 'BMI Calculator', icon: '💪', description: 'Calculate your BMI' }
+              { id: 'loan-emi-calculator', name: 'EMI Calculator', icon: '💰', description: 'Calculate loan EMI and interest', category: 'Finance' },
+              { id: 'sip-calculator', name: 'SIP Calculator', icon: '📈', description: 'Calculate SIP returns', category: 'Finance' },
+              { id: 'risk-calculator', name: 'Risk Calculator', icon: '⚠️', description: 'Calculate investment risk', category: 'Finance' },
+              { id: 'currency-converter', name: 'Currency Converter', icon: '💱', description: 'Convert between currencies', category: 'Conversion' },
+              { id: 'bmi-calculator', name: 'BMI Calculator', icon: '💪', description: 'Calculate your BMI', category: 'Health' }
             ].map((tool, index) => (
               <motion.div
                 key={tool.id}
@@ -452,7 +452,7 @@ export default function HomePage() {
               >
                 <Card 
                   className="h-full hover:shadow-lg transition-all duration-300 cursor-pointer group hover:scale-105 tool-btn"
-                  onClick={() => window.location.href = `#/tool/${tool.id}`}
+                  onClick={() => window.location.href = `#/${tool.category.toLowerCase()}/${tool.id}`}
                   data-tool={tool.name}
                 >
                   <CardHeader className="pb-3">

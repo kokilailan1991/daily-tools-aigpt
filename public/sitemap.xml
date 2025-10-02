@@ -1,156 +1,309 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
   <url>
-    <loc>https://daily-tools-aigpt.onrender.com/</loc>
-    <lastmod>2025-01-07</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://tools.aigpt.co.in/</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   
-  <!-- Finance Tools -->
+  <!-- Blog -->
   <url>
-    <loc>https://daily-tools-aigpt.onrender.com/#/tool/loan-emi-calculator</loc>
-    <lastmod>2025-01-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://daily-tools-aigpt.onrender.com/#/tool/sip-calculator</loc>
-    <lastmod>2025-01-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://daily-tools-aigpt.onrender.com/#/tool/swp-calculator</loc>
-    <lastmod>2025-01-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://daily-tools-aigpt.onrender.com/#/tool/risk-calculator</loc>
-    <lastmod>2025-01-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://daily-tools-aigpt.onrender.com/#/tool/currency-converter</loc>
-    <lastmod>2025-01-07</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://tools.aigpt.co.in/blog</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://daily-tools-aigpt.onrender.com/#/tool/percentage-calculator</loc>
-    <lastmod>2025-01-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://daily-tools-aigpt.onrender.com/#/tool/tip-calculator</loc>
-    <lastmod>2025-01-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   
+  <!-- Deals -->
+  <url>
+    <loc>https://tools.aigpt.co.in/deals</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <!-- Health Tools -->
   <url>
-    <loc>https://daily-tools-aigpt.onrender.com/#/tool/bmi-calculator</loc>
-    <lastmod>2025-01-07</lastmod>
+    <loc>https://tools.aigpt.co.in/health/bmi-calculator</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.aigpt.co.in/health/age-calculator</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.aigpt.co.in/health/calorie-calculator</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.aigpt.co.in/health/bmr-calculator</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.aigpt.co.in/health/ideal-weight-calculator</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Finance Tools -->
+  <url>
+    <loc>https://tools.aigpt.co.in/finance/emi-calculator</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.aigpt.co.in/finance/sip-calculator</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.aigpt.co.in/finance/compound-interest-calculator</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.aigpt.co.in/finance/risk-calculator</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.aigpt.co.in/finance/swp-calculator</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.aigpt.co.in/finance/gst-calculator</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.aigpt.co.in/finance/income-tax-estimator</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.aigpt.co.in/finance/simple-interest-calculator</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Utility Tools -->
+  <url>
+    <loc>https://tools.aigpt.co.in/utility/percentage-calculator</loc>
+    <lastmod>2025-01-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://daily-tools-aigpt.onrender.com/#/tool/age-calculator</loc>
-    <lastmod>2025-01-07</lastmod>
+    <loc>https://tools.aigpt.co.in/utility/tip-calculator</loc>
+    <lastmod>2025-01-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <!-- Utility Tools -->
-  <url>
-    <loc>https://daily-tools-aigpt.onrender.com/#/tool/unit-converter</loc>
-    <lastmod>2025-01-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://daily-tools-aigpt.onrender.com/#/tool/qr-code-generator</loc>
-    <lastmod>2025-01-07</lastmod>
+    <loc>https://tools.aigpt.co.in/utility/qr-code-generator</loc>
+    <lastmod>2025-01-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://daily-tools-aigpt.onrender.com/#/tool/password-generator</loc>
-    <lastmod>2025-01-07</lastmod>
+    <loc>https://tools.aigpt.co.in/utility/password-generator</loc>
+    <lastmod>2025-01-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://daily-tools-aigpt.onrender.com/#/tool/base64-converter</loc>
-    <lastmod>2025-01-07</lastmod>
+    <loc>https://tools.aigpt.co.in/utility/daily-planner</loc>
+    <lastmod>2025-01-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://daily-tools-aigpt.onrender.com/#/tool/ip-lookup</loc>
-    <lastmod>2025-01-07</lastmod>
+    <loc>https://tools.aigpt.co.in/utility/pdf-merger</loc>
+    <lastmod>2025-01-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
-  
+  <url>
+    <loc>https://tools.aigpt.co.in/utility/pdf-to-word</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tools.aigpt.co.in/utility/image-converter</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tools.aigpt.co.in/utility/image-resizer</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tools.aigpt.co.in/utility/cgpa-converter</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tools.aigpt.co.in/utility/equation-solver</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tools.aigpt.co.in/utility/weather-lookup</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tools.aigpt.co.in/utility/pincode-lookup</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tools.aigpt.co.in/utility/ifsc-finder</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tools.aigpt.co.in/utility/fuel-price-checker</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Text Tools -->
   <url>
-    <loc>https://daily-tools-aigpt.onrender.com/#/tool/text-case-converter</loc>
-    <lastmod>2025-01-07</lastmod>
+    <loc>https://tools.aigpt.co.in/text/text-case-converter</loc>
+    <lastmod>2025-01-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://daily-tools-aigpt.onrender.com/#/tool/word-counter</loc>
-    <lastmod>2025-01-07</lastmod>
+    <loc>https://tools.aigpt.co.in/text/word-counter</loc>
+    <lastmod>2025-01-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://daily-tools-aigpt.onrender.com/#/tool/json-formatter</loc>
-    <lastmod>2025-01-07</lastmod>
+    <loc>https://tools.aigpt.co.in/text/json-formatter</loc>
+    <lastmod>2025-01-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://daily-tools-aigpt.onrender.com/#/tool/number-to-words</loc>
-    <lastmod>2025-01-07</lastmod>
+    <loc>https://tools.aigpt.co.in/text/number-to-words</loc>
+    <lastmod>2025-01-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
-  <url>
-    <loc>https://daily-tools-aigpt.onrender.com/#/tool/roman-numeral</loc>
-    <lastmod>2025-01-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
+
   <!-- Time Tools -->
   <url>
-    <loc>https://daily-tools-aigpt.onrender.com/#/tool/date-difference</loc>
-    <lastmod>2025-01-07</lastmod>
+    <loc>https://tools.aigpt.co.in/time/date-difference-calculator</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tools.aigpt.co.in/time/timezone-converter</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tools.aigpt.co.in/time/stopwatch-timer</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tools.aigpt.co.in/time/age-in-days-calculator</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Conversion Tools -->
+  <url>
+    <loc>https://tools.aigpt.co.in/conversion/currency-converter</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tools.aigpt.co.in/conversion/unit-converter</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tools.aigpt.co.in/conversion/base64-converter</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tools.aigpt.co.in/conversion/roman-numeral-converter</loc>
+    <lastmod>2025-01-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://daily-tools-aigpt.onrender.com/#/tool/timezone-converter</loc>
-    <lastmod>2025-01-07</lastmod>
+    <loc>https://tools.aigpt.co.in/conversion/crypto-converter</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Fun Tools -->
+  <url>
+    <loc>https://tools.aigpt.co.in/fun/love-calculator</loc>
+    <lastmod>2025-01-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://daily-tools-aigpt.onrender.com/#/tool/stopwatch-timer</loc>
-    <lastmod>2025-01-07</lastmod>
+    <loc>https://tools.aigpt.co.in/fun/random-joke-generator</loc>
+    <lastmod>2025-01-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://daily-tools-aigpt.onrender.com/#/tool/daily-planner</loc>
-    <lastmod>2025-01-07</lastmod>
+    <loc>https://tools.aigpt.co.in/fun/quote-generator</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tools.aigpt.co.in/fun/meme-text-generator</loc>
+    <lastmod>2025-01-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

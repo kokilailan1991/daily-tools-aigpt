@@ -2,11 +2,14 @@ import { useParams, useNavigate } from 'react-router-dom'
 import { ArrowLeft, Share2, Download } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { tools } from '../data/tools'
+import { getSEOConfig } from '../data/seoConfig'
 import { Button } from '../components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card'
 import { useToast } from '../hooks/use-toast'
 import SocialShare from '../components/SocialShare'
+import SchemaMarkup from '../components/SchemaMarkup'
 import { analytics } from '../utils/simpleAnalytics'
+import { trackToolPageView } from '../utils/analytics'
 import { useEffect } from 'react'
 
 // Import all tool components
@@ -116,13 +119,43 @@ export default function ToolPage() {
 
   const tool = tools.find(t => t.id === toolId)
   const ToolComponent = tool ? toolComponents[tool.component] : null
+  const seoConfig = toolId ? getSEOConfig(toolId) : null
 
-  // Track tool usage
+  // Track tool usage and update SEO metadata
   useEffect(() => {
     if (tool) {
       analytics.trackToolUsage(tool.id, tool.name, 'view')
+      trackToolPageView(tool.id, tool.name)
     }
-  }, [tool])
+    
+    // Update document title and meta description
+    if (seoConfig) {
+      document.title = seoConfig.title
+      
+      // Update meta description
+      let metaDescription = document.querySelector('meta[name="description"]')
+      if (!metaDescription) {
+        metaDescription = document.createElement('meta')
+        metaDescription.setAttribute('name', 'description')
+        document.head.appendChild(metaDescription)
+      }
+      metaDescription.setAttribute('content', seoConfig.description)
+      
+      // Update meta keywords
+      let metaKeywords = document.querySelector('meta[name="keywords"]')
+      if (!metaKeywords) {
+        metaKeywords = document.createElement('meta')
+        metaKeywords.setAttribute('name', 'keywords')
+        document.head.appendChild(metaKeywords)
+      }
+      metaKeywords.setAttribute('content', seoConfig.keywords.join(', '))
+    }
+    
+    // Cleanup function to restore original title
+    return () => {
+      document.title = 'Daily Tools by AIGPT'
+    }
+  }, [tool, seoConfig])
 
   const handleShare = async () => {
     const url = window.location.href.replace('#', '')
@@ -195,6 +228,14 @@ export default function ToolPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800">
+      {/* Schema Markup */}
+      {seoConfig && (
+        <SchemaMarkup 
+          seoConfig={seoConfig}
+          toolName={tool.name}
+          toolDescription={tool.description}
+        />
+      )}
       {/* Header */}
       <header className="border-b bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
@@ -250,6 +291,62 @@ export default function ToolPage() {
                 description={tool.description}
                 url={window.location.href}
               />
+              
+              {/* SEO Content Section */}
+              {seoConfig && (
+                <div className="mt-8 space-y-6">
+                  {/* Main Content */}
+                  <div className="prose prose-gray dark:prose-invert max-w-none">
+                    <h2 className="text-xl font-semibold mb-4">About {tool.name}</h2>
+                    <div className="whitespace-pre-line text-gray-700 dark:text-gray-300 leading-relaxed">
+                      {seoConfig.content}
+                    </div>
+                  </div>
+                  
+                  {/* FAQ Section */}
+                  {seoConfig.faqs && seoConfig.faqs.length > 0 && (
+                    <div className="mt-8">
+                      <h2 className="text-xl font-semibold mb-4">Frequently Asked Questions</h2>
+                      <div className="space-y-4">
+                        {seoConfig.faqs.map((faq, index) => (
+                          <div key={index} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
+                            <h3 className="font-medium text-gray-900 dark:text-gray-100 mb-2">
+                              Q: {faq.question}
+                            </h3>
+                            <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                              A: {faq.answer}
+                            </p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                  
+                  {/* Related Tools */}
+                  {seoConfig.relatedTools && seoConfig.relatedTools.length > 0 && (
+                    <div className="mt-8">
+                      <h2 className="text-xl font-semibold mb-4">Related Tools</h2>
+                      <div className="flex flex-wrap gap-2">
+                        {seoConfig.relatedTools.map((relatedToolId) => {
+                          const relatedTool = tools.find(t => t.id === relatedToolId)
+                          return relatedTool ? (
+                            <Button
+                              key={relatedToolId}
+                              variant="outline"
+                              size="sm"
+                              onClick={() => navigate(`/tool/${relatedToolId}`)}
+                              className="mb-2"
+                            >
+                              <span className="mr-2">{relatedTool.icon}</span>
+                              {relatedTool.name}
+                            </Button>
+                          ) : null
+                        })}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              )}
               
               {/* Finance Tools Disclaimer */}
               {tool.category === 'Finance' && (

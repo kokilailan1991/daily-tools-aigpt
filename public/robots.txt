@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://daily-tools-aigpt.onrender.com/sitemap.xml
+Sitemap: https://tools.aigpt.co.in/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 1
