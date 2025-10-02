@@ -22,7 +22,38 @@ export default function ImageConverter() {
       return
     }
     
-    setResult(`Image conversion to ${targetFormat.toUpperCase()} requires canvas manipulation or libraries like browser-image-compression. This is a demo interface.`)
+    const canvas = document.createElement('canvas')
+    const ctx = canvas.getContext('2d')
+    const img = new Image()
+    
+    img.onload = () => {
+      canvas.width = img.width
+      canvas.height = img.height
+      ctx?.drawImage(img, 0, 0)
+      
+      const quality = targetFormat === 'jpg' ? 0.9 : undefined
+      const mimeType = targetFormat === 'jpg' ? 'image/jpeg' : `image/${targetFormat}`
+      
+      canvas.toBlob((blob) => {
+        if (blob) {
+          const url = URL.createObjectURL(blob)
+          const link = document.createElement('a')
+          link.href = url
+          link.download = `converted_image.${targetFormat}`
+          link.click()
+          URL.revokeObjectURL(url)
+          setResult(`Image successfully converted to ${targetFormat.toUpperCase()} and downloaded!`)
+        } else {
+          setResult('Failed to convert image.')
+        }
+      }, mimeType, quality)
+    }
+    
+    img.onerror = () => {
+      setResult('Failed to load image.')
+    }
+    
+    img.src = URL.createObjectURL(file)
   }
 
   return (

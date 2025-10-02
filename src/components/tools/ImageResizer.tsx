@@ -29,7 +29,38 @@ export default function ImageResizer() {
       return
     }
     
-    setResult(`Image resizing to ${width}x${height} requires canvas manipulation. This is a demo interface.`)
+    const canvas = document.createElement('canvas')
+    const ctx = canvas.getContext('2d')
+    const img = new Image()
+    
+    img.onload = () => {
+      const targetWidth = parseInt(width)
+      const targetHeight = parseInt(height)
+      
+      canvas.width = targetWidth
+      canvas.height = targetHeight
+      ctx?.drawImage(img, 0, 0, targetWidth, targetHeight)
+      
+      canvas.toBlob((blob) => {
+        if (blob) {
+          const url = URL.createObjectURL(blob)
+          const link = document.createElement('a')
+          link.href = url
+          link.download = `resized_image_${targetWidth}x${targetHeight}.jpg`
+          link.click()
+          URL.revokeObjectURL(url)
+          setResult(`Image successfully resized to ${targetWidth}x${targetHeight} and downloaded!`)
+        } else {
+          setResult('Failed to resize image.')
+        }
+      }, 'image/jpeg', 0.9)
+    }
+    
+    img.onerror = () => {
+      setResult('Failed to load image.')
+    }
+    
+    img.src = URL.createObjectURL(file)
   }
 
   return (
