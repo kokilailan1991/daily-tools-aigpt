@@ -55,14 +55,25 @@
     
     <!-- CueLinks Affiliate Script -->
     <script type="text/javascript">
+      // Legacy format for compatibility
       var clid = '248050';
-      (function(d) {
-          var s = d.createElement('script');
-          s.type = 'text/javascript';
-          s.async = true;
-          s.src = (document.location.protocol == 'https:' ? 'https://cdn0.cuelinks.com/js/' : 'http://cdn0.cuelinks.com/js/') + 'cuelinksv2.js';
-          d.getElementsByTagName('body')[0].appendChild(s);
-      })(document);
+      
+      // Modern format
+      (function() {
+        var cueLinks = document.createElement('script');
+        cueLinks.type = 'text/javascript';
+        cueLinks.async = true;
+        cueLinks.src = 'https://cdn0.cuelinks.com/js/cuelinksv2.js';
+        cueLinks.onload = function() {
+          if (typeof CueLinks !== 'undefined') {
+            CueLinks.init({
+              channel_id: '248050'
+            });
+          }
+        };
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(cueLinks, s);
+      })();
     </script>
 
 
@@ -74,7 +85,7 @@
         if (typeof CLDealsWidget !== 'undefined') {
           CLDealsWidget.init({
             container: 'cl_deals_widget',
-            clid: '248050'
+            channel_id: '248050'
           });
           console.log('CueLinks widget initialized successfully');
         } else {
